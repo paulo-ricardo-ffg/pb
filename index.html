@@ -3,20 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>P.B Web</title>
-  <meta name="description" content="Monte seu site One Page, loja virtual ou e-commerce com a P.B Web Sites e Soluções. Design moderno, SEO otimizado e soluções digitais que geram resultados reais.">
-  <meta name="keywords" content="criação de loja virtual, ecommerce, loja online, desenvolvimento e-commerce, site de vendas, checkout otimizado, carrinho de compras, gateways de pagamento">
+  <title>Criação de Loja Virtual e E-commerce Profissional | P.B Web</title>
+  <meta name="description" content="Criação de loja virtual e e-commerce profissional. Design moderno, checkout otimizado, SEO e integração com pagamentos para vender mais. Solicite um orçamento.">
+  <meta name="keywords" content="criação de loja virtual, ecommerce, loja online, desenvolvimento e-commerce, site de vendas, checkout otimizado, carrinho de compras, gateways de pagamento, criação de site, SEO e-commerce, loja virtual profissional">
   <meta name="author" content="P&B Web Sites e Soluções">
-  <link rel="canonical" href="https://www.pbsolucoesweb.com.br/criacao-loja-virtual">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pbweb.com.br/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pbweb.com.br/">
+  <meta property="og:title" content="Criação de Loja Virtual e E-commerce Profissional | P.B Web">
+  <meta property="og:description" content="Criação de loja virtual e e-commerce profissional. Design moderno, checkout otimizado, SEO e integração com pagamentos para vender mais.">
+  <meta property="og:image" content="https://pbweb.com.br/img/logo-og.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://pbweb.com.br/">
+  <meta property="twitter:title" content="Criação de Loja Virtual e E-commerce Profissional | P.B Web">
+  <meta property="twitter:description" content="Criação de loja virtual e e-commerce profissional. Design moderno, checkout otimizado, SEO e integração com pagamentos para vender mais.">
+  <meta property="twitter:image" content="https://pbweb.com.br/img/logo-twitter.png">
   
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Preload crítico -->
+  <link rel="preload" href="style.css" as="style">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
   
   <!-- CSS Principal -->
   <link rel="stylesheet" href="style.css">
@@ -30,19 +51,19 @@
     <div class="container">
       <div class="logo-container">
         <div class="logo">
-          <a href="#inicio" aria-label="P&B Web - Especialistas em criação de lojas virtuais">
-            <img src="img/logo.png" alt="P&B Web - Criação de Lojas Virtuais e E-commerce">
+          <a href="https://pbweb.com.br/" aria-label="P&B Web - Especialistas em criação de lojas virtuais" rel="home">
+            <img src="img/logo.png" alt="P&B Web - Criação de Lojas Virtuais e E-commerce" width="180" height="60">
           </a>
         </div>
         <div class="company-name">P.B - Especialistas em E-commerce</div>
       </div>
       <nav aria-label="Menu principal">
         <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#vantagens">Vantagens</a></li>
-          <li><a href="#processo">Como Funciona</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="#inicio" aria-label="Ir para seção inicial">Início</a></li>
+          <li><a href="#servicos" aria-label="Ver nossos serviços de e-commerce">Serviços</a></li>
+          <li><a href="#vantagens" aria-label="Conheça as vantagens">Vantagens</a></li>
+          <li><a href="#processo" aria-label="Entenda nosso processo">Como Funciona</a></li>
+          <li><a href="#contato" aria-label="Entre em contato">Contato</a></li>
         </ul>
       </nav>
     </div>
@@ -55,7 +76,7 @@
         <div class="hero-content">
           <h1>Criação de Loja Virtual Profissional: Sua Loja Online com Alta Conversão</h1>
           <p>Criamos seu e-commerce com design responsivo, checkout otimizado e integração completa de pagamentos para maximizar vendas.</p>
-          <a href="#contato" class="btn">Solicitar Orçamento para Loja Virtual</a>
+          <a href="#contato" class="btn" aria-label="Solicitar orçamento para criação de loja virtual">Solicitar Orçamento para Loja Virtual</a>
         </div>
       </div>
     </section>
@@ -63,30 +84,30 @@
     <!-- Serviços -->
     <section id="servicos" class="section dark" aria-labelledby="servicos-heading">
       <div class="container">
-        <h2 id="servicos-heading">Soluções Completas para seu E-commerce</h2>
+        <h1 id="servicos-heading">Soluções Completas para seu E-commerce</h1>
         <p class="text-center intro-text">Oferecemos serviços especializados em criação e gestão de lojas virtuais, desde o desenvolvimento até a otimização para conversão.</p>
         <div class="cards">
           <article class="card">
-            <img src="img/site.webp" alt="Criação de Lojas Virtuais - E-commerce Completo" class="card-img">
-            <h3>Lojas Virtuais Completas</h3>
+            <img src="img/site.webp" alt="Criação de Lojas Virtuais - E-commerce Completo" class="card-img" width="400" height="300" loading="lazy">
+            <h2>Lojas Virtuais Completas</h2>
             <p>Desenvolvemos e-commerces profissionais com catálogo de produtos, carrinho de compras, área do cliente e integração com os principais gateways de pagamento como PagSeguro, Mercado Pago e PayPal.</p>
-            <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+solicitar+um+orçamento+para+criação+de+loja+virtual." class="btn whatsapp" target="_blank" aria-label="Solicitar orçamento para criação de loja virtual pelo WhatsApp">
+            <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+solicitar+um+orçamento+para+criação+de+loja+virtual." class="btn whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Solicitar orçamento para criação de loja virtual pelo WhatsApp">
               <i class="fab fa-whatsapp" aria-hidden="true"></i> Orçamento Loja Virtual
             </a>
           </article>
           <article class="card">
-            <img src="img/checkout.webp" alt="Checkout Otimizado para E-commerce - Reduza Abandono de Carrinho" class="card-img">
-            <h3>Checkout Otimizado para E-commerce</h3>
+            <img src="img/checkout.webp" alt="Checkout Otimizado para E-commerce - Reduza Abandono de Carrinho" class="card-img" width="400" height="300" loading="lazy">
+            <h2>Checkout Otimizado para E-commerce</h2>
             <p>Implementamos sistemas de pagamento seguros e otimizados para reduzir o abandono de carrinho em sua loja virtual. Integração com múltiplas formas de pagamento e experiência de compra simplificada.</p>
-            <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+otimizar+o+checkout+da+minha+loja+virtual." class="btn whatsapp" target="_blank" aria-label="Solicitar otimização de checkout para e-commerce pelo WhatsApp">
+            <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+otimizar+o+checkout+da+minha+loja+virtual." class="btn whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Solicitar otimização de checkout para e-commerce pelo WhatsApp">
               <i class="fab fa-whatsapp" aria-hidden="true"></i> Otimizar Checkout
             </a>
           </article>
           <article class="card">
-            <img src="img/seo.webp" alt="SEO para E-commerce - Aumente Visibilidade da Sua Loja Virtual" class="card-img">
-            <h3>SEO para E-commerce</h3>
+            <img src="img/seo.webp" alt="SEO para E-commerce - Aumente Visibilidade da Sua Loja Virtual" class="card-img" width="400" height="300" loading="lazy">
+            <h2>SEO para E-commerce</h2>
             <p>Otimizamos sua loja virtual para mecanismos de busca, aumentando o tráfego orgânico e posicionando seus produtos no topo do Google. Estratégias específicas para e-commerce com foco em conversão.</p>
-            <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+melhorar+o+SEO+da+minha+loja+virtual." class="btn whatsapp" target="_blank" aria-label="Solicitar SEO para e-commerce pelo WhatsApp">
+            <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+melhorar+o+SEO+da+minha+loja+virtual." class="btn whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Solicitar SEO para e-commerce pelo WhatsApp">
               <i class="fab fa-whatsapp" aria-hidden="true"></i> SEO para Loja Virtual
             </a>
           </article>
@@ -95,9 +116,9 @@
     </section>
 
     <!-- Vantagens -->
-    <section id="vantagens" class="section light">
+    <section id="vantagens" class="section light" aria-labelledby="vantagens-heading">
       <div class="container">
-        <h2>Por Que Ter uma Loja Virtual com a P.B Web?</h2>
+        <h2 id="vantagens-heading">Por Que Ter uma Loja Virtual com a P.B Web?</h2>
         <p class="text-center intro-text">Desenvolvemos e-commerces que realmente convertem visitantes em clientes, com foco em experiência do usuário e otimização para vendas.</p>
         
         <div class="benefits">
@@ -126,9 +147,9 @@
     </section>
 
     <!-- Processo -->
-    <section id="processo" class="section dark">
+    <section id="processo" class="section dark" aria-labelledby="processo-heading">
       <div class="container">
-        <h2>Como Criamos sua Loja Virtual</h2>
+        <h2 id="processo-heading">Como Criamos sua Loja Virtual</h2>
         <p class="text-center intro-text">Processo estruturado e transparente para desenvolvimento do seu e-commerce, do planejamento à entrega.</p>
         
         <div class="process-steps">
@@ -155,22 +176,22 @@
         </div>
         
         <div class="text-center">
-          <a href="#contato" class="btn">Quero Minha Loja Virtual</a>
+          <a href="#contato" class="btn" aria-label="Solicitar criação de loja virtual">Quero Minha Loja Virtual</a>
         </div>
       </div>
     </section>
 
     <!-- Contato -->
-    <section id="contato" class="section light">
+    <section id="contato" class="section light" aria-labelledby="contato-heading">
       <div class="container">
-        <h2>Pronto para Ter Sua Loja Virtual?</h2>
+        <h2 id="contato-heading">Pronto para Ter Sua Loja Virtual?</h2>
         <p class="text-center intro-text">Entre em contato para uma consultoria gratuita sobre criação de e-commerce. Vamos analisar suas necessidades e apresentar a melhor solução para seu negócio online.</p>
         
         <div class="contact-buttons">
-          <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+um+orçamento+para+criação+de+loja+virtual." class="btn whatsapp" aria-label="Fale conosco no WhatsApp sobre criação de loja virtual">
+          <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+um+orçamento+para+criação+de+loja+virtual." class="btn whatsapp" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp sobre criação de loja virtual">
               <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
           </a>
-          <a href="mailto:p.bwebsolucoes@gmail.com?subject=Orcamento" class="btn email" aria-label="Solicite orçamento para loja virtual por e-mail">
+          <a href="mailto:p.bwebsolucoes@gmail.com?subject=Orcamento%20Loja%20Virtual" class="btn email" aria-label="Solicite orçamento para loja virtual por e-mail">
             <i class="fas fa-envelope" aria-hidden="true"></i> E-mail
           </a>
         </div>
@@ -180,16 +201,16 @@
           <p><strong>Horário de Atendimento:</strong> Segunda a Sexta, das 9h às 18h</p>
           <p><strong>Retorno Garantido:</strong> Respondemos todas as consultas em até 24 horas</p>
           <p><strong>E-mail:</strong> 
-              <a href="mailto:p.bwebsolucoes@gmail.com">p.bwebsolucoes@gmail.com</a>
+              <a href="mailto:p.bwebsolucoes@gmail.com" aria-label="Enviar e-mail para orçamento">p.bwebsolucoes@gmail.com</a>
           </p>
           <p><strong>Telefone/WhatsApp:</strong> 
-              <a href="https://api.whatsapp.com/send?phone=5511952098723" target="_blank"> +55 11 95209-8723</a>
+              <a href="https://api.whatsapp.com/send?phone=5511952098723" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp"> +55 11 95209-8723</a>
           </p>
         </div>
         
         <!-- QR Code apenas para impressão -->
         <div class="qrcode-print">
-          <img src="img/qrcode.png" alt="QR Code para contato - P&B Web Especialistas em Criação de Lojas Virtuais">
+          <img src="img/qrcode.png" alt="QR Code para contato - P&B Web Especialistas em Criação de Lojas Virtuais" width="150" height="150" loading="lazy">
           <p>Escaneie este código para falar sobre sua loja virtual</p>
         </div>
       </div>
@@ -202,110 +223,150 @@
       <p>© <span id="current-year">2025</span> P.B Web Sites e Soluções - Especialistas em Criação de Lojas Virtuais. Todos os direitos reservados.</p>
       <p class="footer-contact">
         <a href="mailto:p.bwebsolucoes@gmail.com" aria-label="Enviar e-mail para orçamento de loja virtual">p.bwebsolucoes@gmail.com</a> | 
-        <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+saber+mais+sobre+criação+de+loja+virtual." target="_blank" aria-label="Fale no WhatsApp sobre criação de loja virtual">+55 11 95209-8723</a>
+        <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+saber+mais+sobre+criação+de+loja+virtual." target="_blank" rel="noopener noreferrer" aria-label="Fale no WhatsApp sobre criação de loja virtual">+55 11 95209-8723</a>
       </p>
-
+      <p><a href="https://pbweb.com.br/" aria-label="Voltar para página inicial">pbweb.com.br</a></p>
     </div>
   </footer>
 
   <!-- Schema Markup para E-commerce -->
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://pbweb.com.br/#organization",
-      "name": "P&B Web Sites e Soluções",
-      "description": "Especialistas em criação de lojas virtuais, desenvolvimento de e-commerce, marketing digital e SEO",
-      "url": "https://pbweb.com.br",
-      "logo": "https://pbweb.com.br/img/logo.png",
-      "contactPoint": [
-        {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://pbweb.com.br/#website",
+        "url": "https://pbweb.com.br/",
+        "name": "P&B Web Sites e Soluções",
+        "description": "Especialistas em criação de lojas virtuais, desenvolvimento de e-commerce, marketing digital e SEO",
+        "potentialAction": [{
+          "@type": "SearchAction",
+          "target": "https://pbweb.com.br/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }],
+        "inLanguage": "pt-BR"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://pbweb.com.br/#organization",
+        "name": "P&B Web Sites e Soluções",
+        "alternateName": "P.B Web",
+        "url": "https://pbweb.com.br/",
+        "logo": "https://pbweb.com.br/img/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/pbwebsolucoes",
+          "https://www.instagram.com/pbwebsolucoes",
+          "https://br.linkedin.com/company/pbweb"
+        ],
+        "contactPoint": [{
           "@type": "ContactPoint",
           "telephone": "+5511952098723",
-          "email": "p.bwebsolucoes@gmail.com",
-          "contactType": "Sales",
+          "contactType": "customer service",
+          "contactOption": "TollFree",
           "areaServed": "BR",
           "availableLanguage": "Portuguese"
+        }],
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "BR"
         }
-      ]
-    },
-    {
-      "@type": "Service",
-      "serviceType": "Criação de Loja Virtual",
-      "provider": {
-        "@id": "https://pbweb.com.br/#organization"
       },
-      "description": "Desenvolvimento de e-commerce completo com design responsivo, catálogo de produtos, carrinho de compras e integração com gateways de pagamento",
-      "areaServed": "Brasil",
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Serviços de E-commerce",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Criação de Loja Virtual Completa"
+      {
+        "@type": "Service",
+        "serviceType": "Criação de Loja Virtual",
+        "provider": {
+          "@id": "https://pbweb.com.br/#organization"
+        },
+        "description": "Desenvolvimento de e-commerce completo com design responsivo, catálogo de produtos, carrinho de compras e integração com gateways de pagamento",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Brasil"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Serviços de E-commerce",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Criação de Loja Virtual Completa",
+                "description": "Desenvolvimento completo de e-commerce profissional"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Otimização de Checkout",
+                "description": "Redução do abandono de carrinho e aumento da conversão"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "SEO para E-commerce",
+                "description": "Otimização para motores de busca focada em conversão"
+              }
             }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Otimização de Checkout"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "SEO para E-commerce"
-            }
-          }
-        ]
+          ]
+        }
       }
-    }
-  ]
-}
-
+    ]
+  }
   </script>
 
-  <!-- Script Scroll Suave -->
+  <!-- Scripts -->
   <script>
+    // Scroll suave
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
+        const targetId = this.getAttribute('href');
+        if(targetId !== '#') {
+          document.querySelector(targetId).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
       });
     });
-  </script>
 
-  <script>
-    const h=document.querySelector("header");
-    let p=0;
-    window.addEventListener("scroll",()=>{
-      let c=window.scrollY;
-      h.style.transition="top .4s ease, opacity .4s ease";
-      if(c>p){h.style.top="-100px";h.style.opacity="0";}
-      else{h.style.top="0";h.style.opacity="1";}
-      p=c;
+    // Navegação sticky
+    const header = document.querySelector("header");
+    let lastScroll = 0;
+    
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.scrollY;
+      
+      if (currentScroll > 100) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+      
+      if (currentScroll > lastScroll && currentScroll > 100) {
+        header.style.transform = "translateY(-100%)";
+      } else {
+        header.style.transform = "translateY(0)";
+      }
+      
+      lastScroll = currentScroll;
     });
-  </script>
 
-  <!-- Script para atualizar o ano automaticamente -->
-  <script>
+    // Atualizar ano automaticamente
     document.addEventListener('DOMContentLoaded', function() {
       const currentYear = new Date().getFullYear();
       document.getElementById('current-year').textContent = currentYear;
+      
+      // Otimização de performance
+      const images = document.querySelectorAll('img');
+      images.forEach(img => {
+        img.setAttribute('loading', 'lazy');
+      });
     });
   </script>
 </body>
-
 </html>
-
-
-
