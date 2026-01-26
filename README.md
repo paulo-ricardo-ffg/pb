@@ -12,7 +12,7 @@
 
 **Projeto:** Site One Page desenvolvido para divulgação da empresa **P.B - Web Sites e Soluções**, especializada em criação de sites, lojas virtuais e soluções digitais personalizadas.
 
-🤖 **Revisão técnica:** Projeto revisado e aprimorado com apoio de Inteligência Artificial, com base no repositório **pbweb**, focando em SEO, acessibilidade, performance e boas práticas de desenvolvimento web.
+🤖 **Revisão técnica:** Projeto revisado e aprimorado com apoio de Inteligência Artificial, com base no repositório [pbweb](https://github.com/paulo-ricardo-ffg/pbweb), focando em SEO, acessibilidade, performance e boas práticas de desenvolvimento web.
 
 👨‍💻 **Autor:** [Paulo Ricardo](https://github.com/paulo-ricardo-ffg)
 
