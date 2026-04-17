@@ -5,14 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Criação de Loja Virtual e E-commerce Profissional | P.B Web</title>
   
-  <!-- Meta Description (SEO e Compartilhamento) -->
   <meta name="description" content="Criação de loja virtual e e-commerce profissional. Design moderno, checkout otimizado, SEO, integração com pagamentos, gestão em marketplaces e contabilidade. Solicite um orçamento!">
   <meta name="keywords" content="criação de loja virtual, ecommerce, loja online, desenvolvimento e-commerce, site de vendas, checkout otimizado, carrinho de compras, gateways de pagamento, criação de site, SEO e-commerce, loja virtual profissional, marketplaces, shopee, shein, tiktok shop, mercado livre, contabilidade ecommerce">
   <meta name="author" content="P&B Web Sites e Soluções">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://pbweb.com.br/">
   
-  <!-- Open Graph / Facebook / WhatsApp / LinkedIn (usando a logo do site) -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pbweb.com.br/">
   <meta property="og:title" content="P&B Web - Criação de Loja Virtual e E-commerce Profissional">
@@ -20,496 +18,804 @@
   <meta property="og:image" content="https://pbweb.com.br/img/logo.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="P&B Web - Especialistas em Criação de Lojas Virtuais e E-commerce">
   <meta property="og:site_name" content="P&B Web Sites e Soluções">
   <meta property="og:locale" content="pt_BR">
   
-  <!-- Twitter Card (usando a logo do site) -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://pbweb.com.br/">
   <meta name="twitter:title" content="P&B Web - Criação de Loja Virtual Profissional">
   <meta name="twitter:description" content="Sua loja online completa: checkout otimizado, SEO, pagamentos e gestão em marketplaces. Solicite orçamento!">
   <meta name="twitter:image" content="https://pbweb.com.br/img/logo.png">
-  <meta name="twitter:image:alt" content="P&B Web - Especialistas em E-commerce e Marketplaces">
   
-  <!-- WhatsApp (usando a logo do site) -->
-  <meta property="og:title" content="P&B Web - Criação de Loja Virtual e E-commerce">
-  <meta property="og:description" content="Criamos seu e-commerce completo com checkout otimizado, SEO, integração de pagamentos e gestão em marketplaces (Shopee, Shein, TikTok Shop, Mercado Livre). Venda mais online!">
-  <meta property="og:image" content="https://pbweb.com.br/img/logo.png">
-  
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="icon" href="img/favicon.png" sizes="48x48">
-  <link rel="icon" href="img/favicon.png" type="image/png">
-  
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts: Clash Display + Inter (modern premium) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Clash+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   
-  <!-- Preload crítico -->
-  <link rel="preload" href="style.css" as="style">
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
-  
-  <!-- CSS Principal -->
   <link rel="stylesheet" href="style.css">
-  
-  <!-- CSS para Impressão -->
   <link rel="stylesheet" href="print.css" media="print">
+  <style>
+    /* =============================================
+       P.B WEB — REDESIGN PREMIUM V2
+       Modern Geometric · Electric Accents · Clean
+       ============================================= */
+    
+    /* ── Variables ─────────────────────────────── */
+    :root {
+      --bg:          #05080f;
+      --bg-2:        #0a0f1a;
+      --bg-card:     #0e1422;
+      --bg-card-h:   #131b2c;
+      --border:      rgba(255,255,255,0.06);
+      --border-h:    rgba(0,210,255,0.3);
+    
+      --accent:      #00d4ff;
+      --accent-2:    #0affd4;
+      --accent-glow: rgba(0,212,255,0.15);
+    
+      --text:        #f0f4fa;
+      --text-muted:  #7e8aa8;
+      --text-dim:    #3e4a66;
+    
+      --green:       #00e5a0;
+      --orange:      #ff7c4d;
+      --yellow:      #ffd84d;
+      --pink:        #ff4db8;
+    
+      --radius-sm:   10px;
+      --radius-md:   16px;
+      --radius-lg:   24px;
+      --radius-pill: 200px;
+    
+      --transition:  0.25s cubic-bezier(0.2, 0, 0, 1);
+      --shadow-card: 0 12px 32px -12px rgba(0,0,0,0.6);
+      --shadow-glow: 0 0 48px rgba(0,212,255,0.08);
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+    
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    h1, h2, h3, h4, .logo-link, .btn, .section-tag, .step-num, .stat-num {
+      font-family: 'Clash Display', 'Inter', sans-serif;
+    }
+    
+    /* Hero Title & Process numbers font */
+    .hero-content h1, .step-num {
+      font-family: 'Clash Display', sans-serif;
+      font-weight: 700;
+    }
+    
+    p, li, a, span {
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .container {
+      width: min(90%, 1280px);
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    /* Language Switcher */
+    .lang-switcher {
+      position: fixed;
+      top: 20px;
+      right: 90px;
+      z-index: 1100;
+    }
+    .lang-switcher img {
+      width: 28px;
+      height: auto;
+      border-radius: 6px;
+      opacity: 0.7;
+      transition: opacity 0.2s, transform 0.2s;
+      cursor: pointer;
+    }
+    .lang-switcher img:hover {
+      opacity: 1;
+      transform: scale(1.08);
+    }
+    
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      transition: background 0.3s, backdrop-filter 0.3s, padding 0.3s;
+      padding: 1.25rem 0;
+    }
+    .navbar.scrolled {
+      background: rgba(5, 8, 15, 0.92);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 1px 0 var(--border), 0 8px 24px -8px rgba(0,0,0,0.3);
+      padding: 0.7rem 0;
+    }
+    .navbar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo-img {
+      height: 42px;
+      width: auto;
+      filter: brightness(1.05);
+    }
+    .navbar nav ul {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .navbar nav ul li a {
+      font-family: 'Clash Display', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: var(--text-muted);
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-pill);
+      transition: all 0.2s;
+    }
+    .navbar nav ul li a:hover {
+      color: var(--text);
+      background: rgba(255,255,255,0.04);
+    }
+    .nav-cta {
+      background: rgba(0,212,255,0.1) !important;
+      color: var(--accent) !important;
+      border: 1px solid rgba(0,212,255,0.2) !important;
+    }
+    .nav-cta:hover {
+      background: rgba(0,212,255,0.2) !important;
+      color: white !important;
+    }
+    
+    /* Mobile toggle */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .menu-toggle span {
+      width: 24px;
+      height: 2px;
+      background: var(--text);
+      border-radius: 2px;
+      transition: 0.2s;
+    }
+    
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: 'Clash Display', sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border-radius: var(--radius-pill);
+      padding: 0.8rem 2rem;
+      transition: all 0.25s;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #05080f;
+      box-shadow: 0 4px 12px rgba(0,212,255,0.25);
+    }
+    .btn-primary:hover {
+      background: #40e0ff;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px -8px rgba(0,212,255,0.4);
+    }
+    .btn-primary i {
+      transition: transform 0.2s;
+    }
+    .btn-primary:hover i {
+      transform: translateX(4px);
+    }
+    .btn-ghost {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+    .btn-ghost:hover {
+      border-color: rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.03);
+      color: var(--text);
+    }
+    
+    /* Section shared */
+    .section {
+      padding: 6rem 0;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 4rem;
+    }
+    .section-header h2 {
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      margin: 0.8rem 0 1rem;
+      letter-spacing: -0.02em;
+    }
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+    .section-tag {
+      font-family: 'Clash Display', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: rgba(0,212,255,0.08);
+      border: 1px solid rgba(0,212,255,0.2);
+      border-radius: var(--radius-pill);
+      padding: 0.3rem 1rem;
+      display: inline-block;
+    }
+    
+    /* Scroll animations */
+    [data-aos] {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    [data-aos].visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    /* Hero */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding-top: 80px;
+    }
+    .hero-bg-grid {
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(rgba(0,212,255,0.03) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(0,212,255,0.03) 1px, transparent 1px);
+      background-size: 50px 50px;
+      mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 20%, transparent 90%);
+      animation: drift 18s linear infinite;
+    }
+    @keyframes drift {
+      from { background-position: 0 0; }
+      to { background-position: 50px 50px; }
+    }
+    .hero-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(100px);
+      pointer-events: none;
+    }
+    .hero-orb-1 {
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(0,212,255,0.12), transparent);
+      top: -150px; left: -100px;
+    }
+    .hero-orb-2 {
+      width: 450px; height: 450px;
+      background: radial-gradient(circle, rgba(10,255,212,0.08), transparent);
+      bottom: -80px; right: 0;
+    }
+    .hero-content {
+      max-width: 700px;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+    }
+    .badge-dot {
+      width: 8px; height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(0,212,255,0.6); }
+      70% { box-shadow: 0 0 0 10px rgba(0,212,255,0); }
+      100% { box-shadow: 0 0 0 0 rgba(0,212,255,0); }
+    }
+    .hero-content h1 {
+      font-size: clamp(2.5rem, 7vw, 5rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+    }
+    .hero-content h1 em {
+      font-style: normal;
+      color: var(--accent);
+      position: relative;
+    }
+    .hero-content p {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 520px;
+      margin-bottom: 2rem;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+    .hero-stats {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1rem 2rem;
+      width: fit-content;
+      backdrop-filter: blur(4px);
+    }
+    .stat-num {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .stat-divider {
+      width: 1px;
+      height: 32px;
+      background: var(--border);
+    }
+    .hero-scroll-hint {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 0.7rem;
+      color: var(--text-dim);
+      gap: 0.4rem;
+    }
+    
+    /* Cards Grid */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 1.8rem;
+    }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: transform 0.25s, border-color 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: var(--border-h);
+    }
+    .card-media {
+      height: 200px;
+      overflow: hidden;
+      background: #000;
+    }
+    .card-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s;
+    }
+    .card:hover .card-media img {
+      transform: scale(1.05);
+    }
+    .card-media-logo {
+      background: #f8f9fc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+    .card-media-logo img {
+      object-fit: contain;
+      max-height: 110px;
+      width: auto;
+    }
+    .card-media-dark {
+      background: #0a0a0a;
+    }
+    .card-body {
+      padding: 1.5rem 1.8rem 1.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    /* Unified icon style for all cards */
+    .card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: rgba(0,212,255,0.08);
+      border: 1px solid rgba(0,212,255,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      color: var(--accent);
+    }
+    .card-body h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    .card-body p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .card-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(37,211,102,0.08);
+      color: #2ecc71;
+      border: 1px solid rgba(46,204,113,0.2);
+      border-radius: var(--radius-pill);
+      padding: 0.5rem 1.2rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      width: fit-content;
+      transition: 0.2s;
+    }
+    .card-btn:hover {
+      background: #2ecc71;
+      color: #000;
+      border-color: transparent;
+    }
+    
+    /* Benefits */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .benefit-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      text-align: center;
+      transition: 0.2s;
+    }
+    .benefit-card:hover {
+      border-color: var(--border-h);
+    }
+    .benefit-icon {
+      width: 64px;
+      height: 64px;
+      background: rgba(0,212,255,0.08);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.25rem;
+      font-size: 1.6rem;
+      color: var(--accent);
+    }
+    .highlight-item i {
+      color: var(--accent);
+    }
+    .highlights-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      background: var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .highlight-item {
+      background: var(--bg-card);
+      padding: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+    
+    /* Process section */
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    .process-step {
+      position: relative;
+    }
+    .step-num {
+      font-size: 3.8rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      opacity: 0.7;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+    .step-content h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .step-content p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    .process-cta {
+      text-align: center;
+    }
+    
+    /* Contact */
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+    .contact-info-item {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+    }
+    .contact-info-item i {
+      width: 40px;
+      height: 40px;
+      background: rgba(0,212,255,0.08);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+    }
+    .channel-btn {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.4rem;
+      transition: 0.2s;
+      margin-bottom: 0.8rem;
+    }
+    .channel-btn:hover {
+      transform: translateX(5px);
+    }
+    .channel-whatsapp i:first-child { color: #25D366; }
+    .channel-email i:first-child { color: #e74c3c; }
+    .channel-instagram i:first-child {
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    
+    /* Footer */
+    footer {
+      background: var(--bg-2);
+      border-top: 1px solid var(--border);
+      padding: 3rem 0 2rem;
+    }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    .footer-links {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .footer-social a {
+      width: 36px;
+      height: 36px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.2s;
+    }
+    .footer-social a:hover {
+      background: rgba(0,212,255,0.1);
+      color: var(--accent);
+    }
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 0.8rem;
+    }
+    
+    @media (max-width: 1024px) {
+      .process-grid { grid-template-columns: repeat(2,1fr); }
+      .contact-wrapper { grid-template-columns: 1fr; gap: 2rem; }
+    }
+    @media (max-width: 768px) {
+      .menu-toggle { display: flex; }
+      .navbar nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(5,8,15,0.98);
+        backdrop-filter: blur(16px);
+        transform: translateY(-20px);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.2s;
+      }
+      .navbar nav.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+      }
+      .navbar nav ul {
+        flex-direction: column;
+        padding: 1rem;
+      }
+      .cards-grid { grid-template-columns: 1fr; }
+      .process-grid { grid-template-columns: 1fr; }
+      .hero-stats { display: none; }
+      .hero-actions { flex-direction: column; align-items: flex-start; }
+      .step-connector { display: none; }
+      .footer-inner { flex-direction: column; }
+    }
+    @media print {
+      .navbar, .hero-bg-grid, .lang-switcher, .hero-scroll-hint { display: none; }
+      .qrcode-print { display: block; text-align: center; margin-top: 2rem; }
+    }
+  </style>
 </head>
 <body>
-  <!-- Navegação -->
-  <header class="navbar">
-    <div style="
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 999;
-">
-  <a href="https://pbweb.com.br/es/"
-     title="Español (Bolivia)"
-     aria-label="Cambiar a Español">
-    <img 
-      src="https://flagcdn.com/w40/bo.png"
-      alt="Español - Bolivia"
-      style="
-        width: 32px;
-        height: auto;
-        border-radius: 4px;
-        cursor: pointer;
-        transition: transform 0.2s ease;
-      "
-      onmouseover="this.style.transform='scale(1.1)'"
-      onmouseout="this.style.transform='scale(1)'"
-    >
-  </a>
-</div>
+  <div class="lang-switcher">
+    <a href="https://pbweb.com.br/es/" title="Español (Bolivia)">
+      <img src="https://flagcdn.com/w40/bo.png" alt="Español">
+    </a>
+  </div>
+  <header class="navbar" id="navbar">
     <div class="container">
-      <div class="logo-container">
-        <div class="logo">
-          <a href="https://pbweb.com.br/" aria-label="P&B Web - Especialistas em criação de lojas virtuais" rel="home">
-            <img src="img/logo.png" alt="P&B Web - Criação de Lojas Virtuais e E-commerce" width="180" height="60">
-          </a>
-        </div>
-        <div class="company-name">P.B - Especialistas em E-commerce</div>
-      </div>
-      <nav aria-label="Menu principal">
+      <a href="https://pbweb.com.br/" class="logo-link"><img src="img/logo.png" alt="P&B Web" class="logo-img"></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <nav id="mainNav">
         <ul>
-          <li><a href="#inicio" aria-label="Ir para seção inicial">Início</a></li>
-          <li><a href="#servicos" aria-label="Ver nossos serviços de e-commerce">Serviços</a></li>
-          <li><a href="#vantagens" aria-label="Conheça as vantagens">Vantagens</a></li>
-          <li><a href="#processo" aria-label="Entenda nosso processo">Como Funciona</a></li>
-          <li><a href="#contato" aria-label="Entre em contato">Contato</a></li>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#vantagens">Vantagens</a></li>
+          <li><a href="#processo">Como Funciona</a></li>
+          <li><a href="#contato" class="nav-cta">Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
-
-  <!-- Início -->
   <main>
     <section id="inicio" class="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
       <div class="container">
         <div class="hero-content">
-          <h1>Criação de Loja Virtual Profissional: Sua Loja Online com Alta Conversão</h1>
-          <p>Criamos seu e-commerce com design responsivo, checkout otimizado e integração completa de pagamentos para maximizar vendas.</p>
-          <a href="#contato" class="btn" aria-label="Solicitar orçamento para criação de loja virtual">Solicitar Orçamento para Loja Virtual</a>
+          <div class="hero-badge"><span class="badge-dot"></span> Especialistas em E-commerce</div>
+          <h1>Sua Loja Virtual<br><em>que Converte</em></h1>
+          <p>E-commerce com design responsivo, checkout otimizado e integração completa de pagamentos — construído para maximizar suas vendas.</p>
+          <div class="hero-actions">
+            <a href="#contato" class="btn btn-primary">Solicitar Orçamento <i class="fas fa-arrow-right"></i></a>
+            <a href="#servicos" class="btn btn-ghost">Ver Serviços</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Responsivo</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><span class="stat-num">24h</span><span class="stat-label">Retorno</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><span class="stat-num">+10</span><span class="stat-label">Marketplaces</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-hint"><span>Role para baixo</span><i class="fas fa-chevron-down"></i></div>
+    </section>
+
+    <section id="servicos" class="section">
+      <div class="container">
+        <div class="section-header"><div class="section-tag">O Que Fazemos</div><h2>Soluções Completas<br>para seu E-commerce</h2><p>Serviços especializados do desenvolvimento à otimização.</p></div>
+        <div class="cards-grid">
+          <article class="card"><div class="card-media"><img src="./img/site.webp" alt="Loja Virtual" loading="lazy"></div><div class="card-body"><div class="card-icon"><i class="fas fa-store"></i></div><h3>Lojas Virtuais Completas</h3><p>E-commerces profissionais com catálogo, carrinho e integração com PagSeguro, Mercado Pago.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Loja+virtual" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Orçamento Loja Virtual</a></div></article>
+          <article class="card"><div class="card-media"><img src="./img/checkout.webp" alt="Checkout" loading="lazy"></div><div class="card-body"><div class="card-icon"><i class="fas fa-credit-card"></i></div><h3>Checkout Otimizado</h3><p>Reduza abandono de carrinho com fluxo seguro e múltiplas formas de pagamento.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=Checkout" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Otimizar Checkout</a></div></article>
+          <article class="card"><div class="card-media"><img src="./img/seo.webp" alt="SEO" loading="lazy"></div><div class="card-body"><div class="card-icon"><i class="fas fa-search"></i></div><h3>SEO para E-commerce</h3><p>Tráfego orgânico e posicionamento no Google para seus produtos.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=SEO" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> SEO para Loja Virtual</a></div></article>
+          <article class="card"><div class="card-media"><img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80" alt="Documentação"></div><div class="card-body"><div class="card-icon"><i class="fas fa-certificate"></i></div><h3>Documentação e Certificado A1</h3><p>Certificado Digital A1, abertura de CNPJ e documentação jurídica.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=Certificado" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Regularizar Empresa</a></div></article>
+          <article class="card"><div class="card-media"><img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=800&q=80" alt="Multicanal"></div><div class="card-body"><div class="card-icon"><i class="fas fa-layer-group"></i></div><h3>Gestão Multicanal Completa</h3><p>Shopee, Shein, TikTok Shop, Mercado Livre com estoque integrado.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=Multicanal" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Gestão de Marketplaces</a></div></article>
+          <article class="card"><div class="card-media card-media-logo"><img src="https://i.pinimg.com/736x/4b/15/4d/4b154d1ddbd15deb479fc5e9bfc5dbf9.jpg" alt="Shein Partner"></div><div class="card-body"><div class="card-icon"><i class="fas fa-medal"></i></div><h3>Cadastro Oficial Shein</h3><p>Parceiro oficial Shein, cadastro completo e suporte.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=Shein" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Cadastro Shein Partner</a></div></article>
+          <article class="card"><div class="card-media"><img src="https://interacaomarcasepatentes.com.br/wp-content/uploads/2021/10/2021-10-11-r-de-marca-registrada-1.jpg" alt="INPI"></div><div class="card-body"><div class="card-icon"><i class="fas fa-registered"></i></div><h3>Registro de Marca no INPI</h3><p>Proteção da sua marca com consultoria e acompanhamento.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=INPI" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Registrar Minha Marca</a></div></article>
+          <article class="card"><div class="card-media"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" alt="Gestão"></div><div class="card-body"><div class="card-icon"><i class="fas fa-cogs"></i></div><h3>Gestão Completa de E-commerce</h3><p>Administração diária, produtos, estoque e pedidos.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=Gestão" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Contratar Gestão</a></div></article>
+          <article class="card"><div class="card-media card-media-logo"><img src="https://i.pinimg.com/736x/32/92/40/329240fd9fdaa1c07004b0a1788a42f9.jpg" alt="Shopee"></div><div class="card-body"><div class="card-icon"><i class="fas fa-tag"></i></div><h3>Gestão de Loja Shopee</h3><p>Otimização de anúncios e campanhas para featured deals.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=Shopee" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Gestão Shopee</a></div></article>
+          <article class="card"><div class="card-media card-media-logo"><img src="https://logospng.org/download/mercado-livre/logo-mercado-livre-4096.png" alt="Mercado Livre"></div><div class="card-body"><div class="card-icon"><i class="fas fa-star"></i></div><h3>Gestão Mercado Livre</h3><p>Otimização de listings e anúncios premium.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=MercadoLivre" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Gestão Mercado Livre</a></div></article>
+          <article class="card"><div class="card-media card-media-logo card-media-dark"><img src="https://logospng.org/download/tiktok/logo-tiktok-icone-4096.png" alt="TikTok Shop"></div><div class="card-body"><div class="card-icon"><i class="fab fa-tiktok"></i></div><h3>Gestão de TikTok Shop</h3><p>Vendas via vídeos, lives e TikTok Ads.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=TikTok" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Gestão TikTok Shop</a></div></article>
+          <article class="card"><div class="card-media"><img src="https://blog.unyleya.edu.br/wp-content/uploads/2017/06/9-tendencias-de-contabilidade-que-voce-precisa-dominar.jpeg" alt="Contabilidade"></div><div class="card-body"><div class="card-icon"><i class="fas fa-calculator"></i></div><h3>Contabilidade Completa</h3><p>Apuração de impostos e gestão fiscal.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=Contabilidade" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Contratar Contabilidade</a></div></article>
         </div>
       </div>
     </section>
 
-    <!-- Serviços -->
-    <section id="servicos" class="section dark" aria-labelledby="servicos-heading">
-  <div class="container">
-    <h2 id="servicos-heading">Soluções Completas para seu E-commerce</h2>
-    <p class="text-center intro-text">Oferecemos serviços especializados em criação e gestão de lojas virtuais, desde o desenvolvimento até a otimização para conversão, incluindo documentação legal e gestão multicanal.</p>
-    <div class="cards">
-      <article class="card">
-        <img src="./img/site.webp" alt="Criação de Lojas Virtuais - E-commerce Completo" class="card-img" width="400" height="300" loading="lazy">
-        <h2>Lojas Virtuais Completas</h2>
-        <p>Desenvolvemos e-commerces profissionais com catálogo de produtos, carrinho de compras, área do cliente e integração com os principais gateways de pagamento como PagSeguro, Mercado Pago e PayPal.</p>
-        <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+solicitar+um+orçamento+para+criação+de+loja+virtual." class="btn whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Solicitar orçamento para criação de loja virtual pelo WhatsApp">
-          <i class="fab fa-whatsapp" aria-hidden="true"></i> Orçamento Loja Virtual
-        </a>
-      </article>
-      
-      <article class="card">
-        <img src="./img/checkout.webp" alt="Checkout Otimizado para E-commerce - Reduza Abandono de Carrinho" class="card-img" width="400" height="300" loading="lazy">
-        <h2>Checkout Otimizado para E-commerce</h2>
-        <p>Implementamos sistemas de pagamento seguros e otimizados para reduzir o abandono de carrinho em sua loja virtual. Integração com múltiplas formas de pagamento e experiência de compra simplificada.</p>
-        <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+otimizar+o+checkout+da+minha+loja+virtual." class="btn whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Solicitar otimização de checkout para e-commerce pelo WhatsApp">
-          <i class="fab fa-whatsapp" aria-hidden="true"></i> Otimizar Checkout
-        </a>
-      </article>
-      
-      <article class="card">
-        <img src="./img/seo.webp" alt="SEO para E-commerce - Aumente Visibilidade da Sua Loja Virtual" class="card-img" width="400" height="300" loading="lazy">
-        <h2>SEO para E-commerce</h2>
-        <p>Otimizamos sua loja virtual para mecanismos de busca, aumentando o tráfego orgânico e posicionando seus produtos no topo do Google. Estratégias específicas para e-commerce com foco em conversão.</p>
-        <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+melhorar+o+SEO+da+minha+loja+virtual." class="btn whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Solicitar SEO para e-commerce pelo WhatsApp">
-          <i class="fab fa-whatsapp" aria-hidden="true"></i> SEO para Loja Virtual
-        </a>
-      </article>
-      
-      <!-- Novo Serviço: Documentação e Certificado A1 -->
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Documentação Empresarial e Certificado Digital A1" class="card-img" width="400" height="300" loading="lazy">
-        <h2>Documentação e Certificado A1</h2>
-        <p>Regularizamos sua empresa com emissão de Certificado Digital A1 para e-commerce, abertura de CNPJ, legalização e toda documentação necessária para operar sua loja virtual com segurança jurídica e fiscal.</p>
-        <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+regularizar+minha+empresa+para+e-commerce+com+Certificado+A1." class="btn whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Solicitar documentação e certificado digital pelo WhatsApp">
-          <i class="fab fa-whatsapp" aria-hidden="true"></i> Regularizar Empresa
-        </a>
-      </article>
-      
-      <!-- Novo Serviço: Gestão Multicanal -->
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Gestão de Marketplaces - Shopee, Shein, TikTok Shop e Mercado Livre" class="card-img" width="400" height="300" loading="lazy">
-        <h2>Gestão Multicanal Completa</h2>
-        <p>Administramos suas lojas em todos os principais marketplaces: Shopee, Shein (como parceiro oficial), TikTok Shop e Mercado Livre. Gestão integrada de estoque, pedidos, atendimento e otimização de anúncios.</p>
-        <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+contratar+gestão+multicanal+para+minhas+lojas+em+marketplaces." class="btn whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Solicitar gestão de marketplaces pelo WhatsApp">
-          <i class="fab fa-whatsapp" aria-hidden="true"></i> Gestão de Marketplaces
-        </a>
-      </article>
-      
-      <!-- Novo Serviço: Cadastro Shein Oficial -->
-      <article class="card">
-        <img src="https://i.pinimg.com/736x/4b/15/4d/4b154d1ddbd15deb479fc5e9bfc5dbf9.jpg" alt="Cadastro Oficial Shein Partner - Parceria Autorizada" class="card-img marketplace-logo" width="400" height="300" loading="lazy" style="object-fit: contain; background-color: #fff;">
-        <h2>Cadastro Oficial Shein</h2>
-        <p>Como parceiros oficiais Shein, realizamos seu cadastro completo e verificado na plataforma. Configuração profissional da loja, integração de produtos e suporte especializado para vender na maior plataforma de moda global.</p>
-        <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+fazer+cadastro+oficial+como+Shein+Partner." class="btn whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Solicitar cadastro oficial Shein Partner pelo WhatsApp">
-          <i class="fab fa-whatsapp" aria-hidden="true"></i> Cadastro Shein Partner
-        </a>
-      </article>
-      
-      <!-- Novo Serviço: Registro de Marca -->
-      <article class="card">
-        <img src="https://interacaomarcasepatentes.com.br/wp-content/uploads/2021/10/2021-10-11-r-de-marca-registrada-1.jpg" alt="Registro de Marca no INPI - Proteja seu Negócio" class="card-img" width="400" height="300" loading="lazy">
-        <h2>Registro de Marca no INPI</h2>
-        <p>Proteja sua identidade empresarial com registro de marca oficial no INPI. Consultoria para busca de anterioridade, elaboração do pedido, acompanhamento do processo e obtenção do certificado de registro.</p>
-        <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+registrar+minha+marca+no+INPI." class="btn whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Solicitar registro de marca pelo WhatsApp">
-          <i class="fab fa-whatsapp" aria-hidden="true"></i> Registrar Minha Marca
-        </a>
-      </article>
-      
-      <!-- Novo Serviço: Administração de E-commerce -->
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Administração Completa de Loja Virtual - Gestão Diária" class="card-img" width="400" height="300" loading="lazy">
-        <h2>Gestão Completa de E-commerce</h2>
-        <p>Administração diária da sua loja virtual: atualização de produtos, gestão de estoque, processamento de pedidos, atendimento ao cliente, relatórios de performance e manutenção preventiva do sistema.</p>
-        <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+contratar+gestão+completa+para+minha+loja+virtual." class="btn whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Solicitar administração de e-commerce pelo WhatsApp">
-          <i class="fab fa-whatsapp" aria-hidden="true"></i> Contratar Gestão
-        </a>
-      </article>
-
-      <!-- Novo Serviço: Shopee - com logo oficial -->
-      <article class="card">
-        <img src="https://i.pinimg.com/736x/32/92/40/329240fd9fdaa1c07004b0a1788a42f9.jpg" alt="Gestão de Loja Shopee - Marketplace" class="card-img marketplace-logo" width="400" height="300" loading="lazy" style="object-fit: contain; background-color: #fff;">
-        <h2>Gestão de Loja Shopee</h2>
-        <p>Administração completa da sua loja na Shopee: otimização de anúncios, gestão de campanhas promocionais, análise de concorrência, aumento de visibilidade e estratégias para featured deals e flash sales.</p>
-        <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+contratar+gestão+para+minha+loja+na+Shopee." class="btn whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Solicitar gestão Shopee pelo WhatsApp">
-          <i class="fab fa-whatsapp" aria-hidden="true"></i> Gestão Shopee
-        </a>
-      </article>
-
-      <!-- Novo Serviço: Mercado Livre - com logo oficial -->
-      <article class="card">
-        <img src="https://logospng.org/download/mercado-livre/logo-mercado-livre-4096.png" alt="Gestão de Loja Mercado Livre - Marketplace" class="card-img marketplace-logo" width="400" height="300" loading="lazy" style="object-fit: contain; background-color: #fff;">
-        <h2>Gestão de Loja Mercado Livre</h2>
-        <p>Gestão profissional da sua loja no Mercado Livre: otimização de listings, gestão de anúncios premium, melhoria da reputação do vendedor, estratégias de frete grátis e aumento de conversões.</p>
-        <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+contratar+gestão+para+minha+loja+no+Mercado+Livre." class="btn whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Solicitar gestão Mercado Livre pelo WhatsApp">
-          <i class="fab fa-whatsapp" aria-hidden="true"></i> Gestão Mercado Livre
-        </a>
-      </article>
-
-      <!-- Novo Serviço: TikTok Shop - com logo oficial -->
-      <article class="card">
-        <img src="https://logospng.org/download/tiktok/logo-tiktok-icone-4096.png" alt="Gestão de TikTok Shop - Marketplace" class="card-img marketplace-logo" width="400" height="300" loading="lazy" style="object-fit: contain; background-color: #000;">
-        <h2>Gestão de TikTok Shop</h2>
-        <p>Implementação e gestão da sua loja no TikTok Shop: integração com conteúdos virais, gestão de vendas através de vídeos e lives, estratégias de TikTok Ads e aumento de vendas através do engajamento.</p>
-        <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+contratar+gestão+para+minha+loja+no+TikTok+Shop." class="btn whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Solicitar gestão TikTok Shop pelo WhatsApp">
-          <i class="fab fa-whatsapp" aria-hidden="true"></i> Gestão TikTok Shop
-        </a>
-
-      </article>
-            <!-- Novo Serviço: Contabilidade -->
-      <article class="card">
-        <img src="https://blog.unyleya.edu.br/wp-content/uploads/2017/06/9-tendencias-de-contabilidade-que-voce-precisa-dominar.jpeg" alt="Contabilidade de Empresas" class="card-img marketplace-logo" width="400" height="300" loading="lazy" style="object-fit: contain; background-color: #000;">
-        <h2>Contabilidade Completa</h2>
-        <p>Serviços de contabilidade completos: apuração correta de impostos, gestão fiscal e contábil, uso de códigos fiscais oficiais e conformidade com a legislação, garantindo segurança e organização para sua empresa.</p>
-        <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+contratar+o+serviço+de+Contabilidade." class="btn whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Solicitar Contabilidade">
-          <i class="fab fa-whatsapp" aria-hidden="true"></i> Contratar Contabilidade
-        </a>
-      </article>
-    </div>
-  </div>
-</section>
-
-    <!-- Vantagens -->
-    <section id="vantagens" class="section light" aria-labelledby="vantagens-heading">
-      <div class="container">
-        <h2 id="vantagens-heading">Por Que Ter uma Loja Virtual com a P.B Web?</h2>
-        <p class="text-center intro-text">Desenvolvemos e-commerces que realmente convertem visitantes em clientes, com foco em experiência do usuário e otimização para vendas.</p>
-        
-        <div class="benefits">
-          <div class="benefit">
-            <i class="fas fa-shopping-cart" aria-hidden="true"></i>
-            <h3>E-commerce Completo</h3>
-            <p>Sua loja virtual com todas as funcionalidades necessárias: catálogo, carrinho, checkout, gestão de pedidos e relatórios de vendas.</p>
-          </div>
-          <div class="benefit">
-            <i class="fas fa-mobile-alt" aria-hidden="true"></i>
-            <h3>Otimizado para Mobile</h3>
-            <p>Design responsivo que garante a melhor experiência de compra em smartphones e tablets, onde a maioria das vendas acontece.</p>
-          </div>
-          <div class="benefit">
-            <i class="fas fa-lock" aria-hidden="true"></i>
-            <h3>Pagamentos Seguros</h3>
-            <p>Integração com os principais gateways de pagamento brasileiros, garantindo segurança e confiança para suas transações.</p>
-          </div>
-          <div class="benefit">
-            <i class="fas fa-truck" aria-hidden="true"></i>
-            <h3>Gestão de Entregas</h3>
-            <p>Cálculo automático de frete com integração aos principais correios e transportadoras, facilitando o processo logístico.</p>
-          </div>
-        </div>
+    <section id="vantagens" class="section">
+      <div class="container"><div class="section-header"><div class="section-tag">Por Que Escolher a P.B Web</div><h2>Desenvolvemos E-commerces<br>que Realmente Vendem</h2><p>Foco em experiência do usuário e conversão.</p></div>
+        <div class="benefits-grid"><div class="benefit-card"><div class="benefit-icon"><i class="fas fa-shopping-cart"></i></div><h3>E-commerce Completo</h3><p>Catálogo, carrinho, checkout e relatórios.</p></div><div class="benefit-card"><div class="benefit-icon"><i class="fas fa-mobile-alt"></i></div><h3>Otimizado para Mobile</h3><p>Design responsivo para todas as telas.</p></div><div class="benefit-card"><div class="benefit-icon"><i class="fas fa-lock"></i></div><h3>Pagamentos Seguros</h3><p>Gateways confiáveis e transações protegidas.</p></div><div class="benefit-card"><div class="benefit-icon"><i class="fas fa-truck"></i></div><h3>Gestão de Entregas</h3><p>Frete automático com Correios e transportadoras.</p></div></div>
+        <div class="highlights-strip"><div class="highlight-item"><i class="fas fa-chart-line"></i><div><h4>Alta Conversão</h4><p>UX otimizada para vendas</p></div></div><div class="highlight-item"><i class="fas fa-headset"></i><div><h4>Suporte Dedicado</h4><p>Atendimento ágil</p></div></div><div class="highlight-item"><i class="fas fa-shield-alt"></i><div><h4>Segurança Total</h4><p>SSL e backups</p></div></div><div class="highlight-item"><i class="fas fa-rocket"></i><div><h4>Alta Performance</h4><p>Sites rápidos e SEO</p></div></div></div>
       </div>
     </section>
 
-    <!-- Processo -->
-    <section id="processo" class="section dark" aria-labelledby="processo-heading">
-      <div class="container">
-        <h2 id="processo-heading">Como Criamos sua Loja Virtual</h2>
-        <p class="text-center intro-text">Processo estruturado e transparente para desenvolvimento do seu e-commerce, do planejamento à entrega.</p>
-        
-        <div class="process-steps">
-          <div class="step">
-            <div class="step-number">1</div>
-            <h3>Planejamento do E-commerce</h3>
-            <p>Análise do seu nicho, concorrência e definição da estrutura ideal para sua loja virtual, incluindo catálogo de produtos e fluxo de vendas.</p>
-          </div>
-          <div class="step">
-            <div class="step-number">2</div>
-            <h3>Design e Desenvolvimento</h3>
-            <p>Criação do layout personalizado e desenvolvimento de todas as funcionalidades do e-commerce, focando na experiência do usuário e conversão.</p>
-          </div>
-          <div class="step">
-            <div class="step-number">3</div>
-            <h3>Integração de Pagamentos</h3>
-            <p>Configuração e integração com gateways de pagamento, métodos de entrega e sistemas essenciais para o funcionamento da loja virtual.</p>
-          </div>
-          <div class="step">
-            <div class="step-number">4</div>
-            <h3>Treinamento e Lançamento</h3>
-            <p>Treinamento para gestão da loja virtual, lançamento e acompanhamento inicial para garantir o sucesso do seu e-commerce.</p>
-          </div>
-        </div>
-        
-        <div class="text-center">
-          <a href="#contato" class="btn" aria-label="Solicitar criação de loja virtual">Quero Minha Loja Virtual</a>
-        </div>
+    <section id="processo" class="section">
+      <div class="container"><div class="section-header"><div class="section-tag">Como Funciona</div><h2>Do Zero ao Lançamento<br>em 4 Etapas</h2><p>Processo transparente e estruturado.</p></div>
+        <div class="process-grid"><div class="process-step"><div class="step-num">01</div><div class="step-content"><h3>Planejamento</h3><p>Análise do nicho, concorrência e estrutura do catálogo.</p></div></div><div class="process-step"><div class="step-num">02</div><div class="step-content"><h3>Design & Desenvolvimento</h3><p>Layout exclusivo e foco na experiência de compra.</p></div></div><div class="process-step"><div class="step-num">03</div><div class="step-content"><h3>Integração de Pagamentos</h3><p>Gateways, fretes e sistemas essenciais.</p></div></div><div class="process-step"><div class="step-num">04</div><div class="step-content"><h3>Treinamento & Lançamento</h3><p>Treinamento e acompanhamento inicial.</p></div></div></div>
+        <div class="process-cta"><a href="#contato" class="btn btn-primary">Quero Minha Loja Virtual <i class="fas fa-arrow-right"></i></a></div>
       </div>
     </section>
 
-    <!-- Contato -->
-    <section id="contato" class="section light" aria-labelledby="contato-heading">
-      <div class="container">
-        <h2 id="contato-heading">Pronto para Ter Sua Loja Virtual?</h2>
-        <p class="text-center intro-text">Entre em contato para uma consultoria gratuita sobre criação de e-commerce. Vamos analisar suas necessidades e apresentar a melhor solução para seu negócio online.</p>
-        
-        <div class="contact-buttons">
-          <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+um+orçamento+para+criação+de+loja+virtual." class="btn whatsapp" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp sobre criação de loja virtual">
-              <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
-          </a>
-          <a href="mailto:atendimento@pbweb.com.br?subject=Orcamento%20Loja%20Virtual"
-             class="btn email"
-             aria-label="Solicite orçamento para loja virtual por e-mail">
-            <i class="fas fa-envelope" aria-hidden="true"></i> E-mail
-          </a>
-
-          <a href="https://www.instagram.com/p.bweb/" 
-            class="btn instagram" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-            style="background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; border: none; text-decoration: none; display: inline-block; padding: 12px 30px; border-radius: 30px; font-weight: 600; transition: all 0.3s ease;">
-            <i class="fab fa-instagram" aria-hidden="true"></i> Instagram
-          </a>
-
-        </div>
-        
-        <div class="contact-info">
-          <p><strong>Especialistas em:</strong> Criação de Lojas Virtuais, E-commerce, Desenvolvimento de Sites</p>
-          <p><strong>Horário de Atendimento:</strong> Segunda a Sexta, das 9h às 18h</p>
-          <p><strong>Retorno Garantido:</strong> Respondemos todas as consultas em até 24 horas</p>
-          <p><strong>E-mail:</strong> 
-              <a href="mailto:atendimento@pbweb.com.br" aria-label="Enviar e-mail para orçamento">atendimento@pbweb.com.br</a>
-          </p>
-          <p><strong>Telefone/WhatsApp:</strong> 
-              <a href="https://api.whatsapp.com/send?phone=5511952098723" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp"> +55 11 95209-8723</a>
-          </p>
-        </div>
-        
-        <!-- QR Code apenas para impressão -->
-        <div class="qrcode-print">
-          <img src="img/qrcode.png" alt="QR Code para contato - P&B Web Especialistas em Criação de Lojas Virtuais" width="150" height="150" loading="lazy">
-          <p>Escaneie este código para falar sobre sua loja virtual</p>
-        </div>
-      </div>
+    <section id="contato" class="section">
+      <div class="container"><div class="contact-wrapper"><div class="contact-left"><div class="section-tag">Fale Conosco</div><h2>Pronto para Ter<br>Sua Loja Virtual?</h2><p>Consultoria gratuita para seu e-commerce. Vamos analisar suas necessidades.</p><div class="contact-info-list"><div class="contact-info-item"><i class="fas fa-clock"></i><div><strong>Horário de Atendimento</strong><span>Segunda a Sexta, 9h às 18h</span></div></div><div class="contact-info-item"><i class="fas fa-reply"></i><div><strong>Retorno Garantido</strong><span>Respondemos em até 24h</span></div></div><div class="contact-info-item"><i class="fas fa-envelope"></i><div><strong>E-mail</strong><a href="mailto:atendimento@pbweb.com.br">atendimento@pbweb.com.br</a></div></div><div class="contact-info-item"><i class="fab fa-whatsapp"></i><div><strong>WhatsApp</strong><a href="https://api.whatsapp.com/send?phone=5511952098723">+55 11 95209-8723</a></div></div></div></div><div class="contact-right"><div class="contact-channels"><p class="channels-label">Fale pelo canal preferido:</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=Orçamento" class="channel-btn channel-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i><span><strong>WhatsApp</strong><small>Resposta rápida</small></span><i class="fas fa-arrow-right"></i></a><a href="mailto:atendimento@pbweb.com.br" class="channel-btn channel-email"><i class="fas fa-envelope"></i><span><strong>E-mail</strong><small>atendimento@pbweb.com.br</small></span><i class="fas fa-arrow-right"></i></a><a href="https://www.instagram.com/p.bweb/" class="channel-btn channel-instagram" target="_blank"><i class="fab fa-instagram"></i><span><strong>Instagram</strong><small>@p.bweb</small></span><i class="fas fa-arrow-right"></i></a></div></div></div><div class="qrcode-print"><img src="img/qrcode.png" alt="QR Code" width="120"><p>Escaneie para falar sobre sua loja virtual</p></div></div>
     </section>
   </main>
 
-  <!-- Rodapé -->
-  <footer>
-    <div class="container">
-      <p>© <span id="current-year">2025</span> P.B Web Sites e Soluções - Especialistas em Criação de Lojas Virtuais. Todos os direitos reservados.</p>
-      <p class="footer-contact">
-        <a href="mailto:atendimento@pbweb.com.br" aria-label="Enviar e-mail para orçamento de loja virtual">atendimento@pbweb.com.br</a> | 
-        <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Gostaria+de+saber+mais+sobre+criação+de+loja+virtual." target="_blank" rel="noopener noreferrer" aria-label="Fale no WhatsApp sobre criação de loja virtual">+55 11 95209-8723</a>
-      </p>
-    </div>
-  </footer>
+  <footer><div class="container"><div class="footer-inner"><div class="footer-brand"><img src="img/logo.png" alt="P&B Web" height="36"><p>Especialistas em Criação de Lojas Virtuais e E-commerce Profissional.</p></div><div class="footer-links"><a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#vantagens">Vantagens</a><a href="#processo">Como Funciona</a><a href="#contato">Contato</a></div><div class="footer-social"><a href="https://www.instagram.com/p.bweb/" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://www.facebook.com/pbwebsolucoes" target="_blank"><i class="fab fa-facebook-f"></i></a><a href="https://github.com/paulo-ricardo-ffg" target="_blank"><i class="fab fa-github"></i></a></div></div><div class="footer-bottom"><p>© <span id="current-year">2025</span> P.B Web Sites e Soluções. Todos os direitos reservados.</p><p><a href="mailto:atendimento@pbweb.com.br">atendimento@pbweb.com.br</a> · <a href="https://api.whatsapp.com/send?phone=5511952098723">+55 11 95209-8723</a></p></div></div></footer>
 
-  <!-- Schema Markup para E-commerce -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://pbweb.com.br/#website",
-        "url": "https://pbweb.com.br/",
-        "name": "P&B Web Sites e Soluções",
-        "description": "Especialistas em criação de lojas virtuais, desenvolvimento de e-commerce, marketing digital e SEO",
-        "potentialAction": [{
-          "@type": "SearchAction",
-          "target": "https://pbweb.com.br/?s={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }],
-        "inLanguage": "pt-BR"
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://pbweb.com.br/#organization",
-        "name": "P&B Web Sites e Soluções",
-        "alternateName": "P.B Web",
-        "url": "https://pbweb.com.br/",
-        "logo": "https://pbweb.com.br/img/logo.png",
-        "sameAs": [
-          "https://github.com/paulo-ricardo-ffg",
-          "https://github.com/paulo-ricardo-ffg/pb",
-          "https://www.facebook.com/pbwebsolucoes",
-          "https://www.instagram.com/p.bweb/"
-        ],
-        "contactPoint": [{
-          "@type": "ContactPoint",
-          "telephone": "+5511952098723",
-          "contactType": "customer service",
-          "contactOption": "TollFree",
-          "areaServed": "BR",
-          "availableLanguage": "Portuguese"
-        }],
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "BR"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Criação de Loja Virtual",
-        "provider": {
-          "@id": "https://pbweb.com.br/#organization"
-        },
-        "description": "Desenvolvimento de e-commerce completo com design responsivo, catálogo de produtos, carrinho de compras e integração com gateways de pagamento",
-        "areaServed": {
-          "@type": "Country",
-          "name": "Brasil"
-        },
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Serviços de E-commerce",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Criação de Loja Virtual Completa",
-                "description": "Desenvolvimento completo de e-commerce profissional"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Otimização de Checkout",
-                "description": "Redução do abandono de carrinho e aumento da conversão"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "SEO para E-commerce",
-                "description": "Otimização para motores de busca focada em conversão"
-              }
-            }
-          ]
-        }
-      }
-    ]
-  }
-  </script>
-
-  <!-- Scripts -->
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://pbweb.com.br/#website","url":"https://pbweb.com.br/","name":"P&B Web Sites e Soluções","description":"Especialistas em criação de lojas virtuais","inLanguage":"pt-BR"},{"@type":"Organization","@id":"https://pbweb.com.br/#organization","name":"P&B Web","url":"https://pbweb.com.br/","logo":"https://pbweb.com.br/img/logo.png","sameAs":["https://github.com/paulo-ricardo-ffg","https://www.facebook.com/pbwebsolucoes","https://www.instagram.com/p.bweb/"],"contactPoint":[{"@type":"ContactPoint","telephone":"+5511952098723","contactType":"customer service","areaServed":"BR"}]}]}</script>
   <script>
-    // Scroll suave
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        if(targetId !== '#') {
-          document.querySelector(targetId).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      });
-    });
-
-    // Navegação sticky
-    const header = document.querySelector("header");
-    let lastScroll = 0;
-    
-    window.addEventListener("scroll", () => {
-      const currentScroll = window.scrollY;
-      
-      if (currentScroll > 100) {
-        header.classList.add("scrolled");
-      } else {
-        header.classList.remove("scrolled");
-      }
-      
-      if (currentScroll > lastScroll && currentScroll > 100) {
-        header.style.transform = "translateY(-100%)";
-      } else {
-        header.style.transform = "translateY(0)";
-      }
-      
-      lastScroll = currentScroll;
-    });
-
-    // Atualizar ano automaticamente
-    document.addEventListener('DOMContentLoaded', function() {
-      const currentYear = new Date().getFullYear();
-      document.getElementById('current-year').textContent = currentYear;
-      
-      // Otimização de performance
-      const images = document.querySelectorAll('img');
-      images.forEach(img => {
-        img.setAttribute('loading', 'lazy');
-      });
-    });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener('click',function(e){let id=this.getAttribute('href');if(id!=="#"){e.preventDefault();let target=document.querySelector(id);if(target) target.scrollIntoView({behavior:'smooth'})}})});
+    const navbar=document.getElementById('navbar');let lastScroll=0;
+    window.addEventListener('scroll',()=>{let current=window.scrollY;navbar.classList.toggle('scrolled',current>60);navbar.style.transform=(current>lastScroll&&current>120)?'translateY(-100%)':'translateY(0)';lastScroll=current;});
+    const toggle=document.getElementById('menuToggle'),nav=document.getElementById('mainNav');
+    toggle.addEventListener('click',()=>{let isActive=toggle.classList.toggle('active');nav.classList.toggle('active',isActive);toggle.setAttribute('aria-expanded',isActive);});
+    nav.querySelectorAll('a').forEach(link=>{link.addEventListener('click',()=>{toggle.classList.remove('active');nav.classList.remove('active');});});
+    const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);}});},{threshold:0.1});
+    document.querySelectorAll('[data-aos]').forEach(el=>observer.observe(el));
+    document.getElementById('current-year').textContent=new Date().getFullYear();
   </script>
 </body>
 </html>
