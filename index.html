@@ -1,821 +1,1639 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" itemscope itemtype="https://schema.org/LocalBusiness">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Criação de Loja Virtual e E-commerce Profissional | P.B Web</title>
-  
+  <title>P.B Web — Criação de Loja Virtual e E-commerce Profissional</title>
   <meta name="description" content="Criação de loja virtual e e-commerce profissional. Design moderno, checkout otimizado, SEO, integração com pagamentos, gestão em marketplaces e contabilidade. Solicite um orçamento!">
   <meta name="keywords" content="criação de loja virtual, ecommerce, loja online, desenvolvimento e-commerce, site de vendas, checkout otimizado, carrinho de compras, gateways de pagamento, criação de site, SEO e-commerce, loja virtual profissional, marketplaces, shopee, shein, tiktok shop, mercado livre, contabilidade ecommerce">
   <meta name="author" content="P&B Web Sites e Soluções">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://pbweb.com.br/">
-  
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pbweb.com.br/">
-  <meta property="og:title" content="P&B Web - Criação de Loja Virtual e E-commerce Profissional">
-  <meta property="og:description" content="Criamos seu e-commerce completo com checkout otimizado, SEO, integração de pagamentos e gestão em marketplaces (Shopee, Shein, TikTok Shop, Mercado Livre). Venda mais online!">
+  <meta property="og:title" content="P&B Web — Criação de Loja Virtual e E-commerce Profissional">
+  <meta property="og:description" content="Criamos seu e-commerce completo com checkout otimizado, SEO, integração de pagamentos e gestão em marketplaces. Venda mais online!">
   <meta property="og:image" content="https://pbweb.com.br/img/imagemredes.jpeg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="P&B Web Sites e Soluções">
   <meta property="og:locale" content="pt_BR">
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://pbweb.com.br/">
-  <meta name="twitter:title" content="P&B Web - Criação de Loja Virtual Profissional">
-  <meta name="twitter:description" content="Sua loja online completa: checkout otimizado, SEO, pagamentos e gestão em marketplaces. Solicite orçamento!">
-  <meta name="twitter:image" content="https://pbweb.com.br/img/imagemredes.jpeg">
-  
   <link rel="icon" type="image/png" href="img/favicon.png">
-  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+/* ================================================================
+   P.B WEB — QUANTUM COMMERCE × PREMIUM AGENCY
+   Palette: #020010 · #0d0130 · #4d68f2 · #00d4ff · #9b59ff
+================================================================ */
+:root {
+  --void:    #020010;
+  --deep:    #0d0130;
+  --ink:     #13024a;
+  --blue:    #4d68f2;
+  --bright:  #7b96ff;
+  --cyan:    #00d4ff;
+  --purple:  #9b59ff;
+  --white:   #f0f0ff;
+  --muted:   #7878aa;
+  --border:  rgba(77,104,242,0.18);
+  --card-bg: rgba(13,1,48,0.55);
+  --glow:    rgba(77,104,242,0.35);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background: var(--void);
+  color: var(--white);
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+main { overflow-x: hidden; width: 100%; }
+
+/* quantum dot-grid */
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background-image: radial-gradient(circle, rgba(77,104,242,0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* noise overlay */
+body::after {
+  content: '';
+  position: fixed; inset: 0;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ambient gradient mesh */
+.ambient { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+.ambient-orb {
+  position: absolute; border-radius: 50%;
+  filter: blur(120px);
+  animation: orbDrift 18s ease-in-out infinite;
+}
+.ambient-orb:nth-child(1) {
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(77,104,242,0.12), transparent 70%);
+  top: -200px; right: -100px; animation-delay: 0s;
+}
+.ambient-orb:nth-child(2) {
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(155,89,255,0.08), transparent 70%);
+  bottom: 10%; left: -150px; animation-delay: -6s;
+}
+.ambient-orb:nth-child(3) {
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(0,212,255,0.07), transparent 70%);
+  top: 40%; left: 50%; animation-delay: -12s;
+}
+@keyframes orbDrift {
+  0%,100% { transform: translate(0,0) scale(1); }
+  33%      { transform: translate(30px,-40px) scale(1.05); }
+  66%      { transform: translate(-20px,30px) scale(0.95); }
+}
+
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: var(--void); }
+::-webkit-scrollbar-thumb { background: linear-gradient(180deg, var(--blue), var(--cyan)); }
+
+/* scroll progress */
+#scrollProgress {
+  position: fixed; top: 0; left: 0;
+  width: 100%; height: 2px;
+  background: linear-gradient(90deg, var(--blue), var(--cyan), var(--purple));
+  transform: scaleX(0); transform-origin: left;
+  z-index: 9999;
+  transition: transform 0.1s linear;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ================================================================
+   HEADER
+================================================================ */
+#header {
+  position: fixed; top: 0; left: 0; width: 100%;
+  z-index: 1000;
+  background: rgba(2,0,16,0.7);
+  backdrop-filter: blur(24px) saturate(1.4);
+  border-bottom: 1px solid var(--border);
+  transition: transform 0.4s cubic-bezier(.4,0,.2,1), background 0.4s;
+}
+#header.hidden { transform: translateY(-100%); }
+#header.scrolled { background: rgba(2,0,16,0.92); }
+
+.header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: fadeIn 0.8s ease both;
+}
+
+.logo {
+  display: flex; align-items: center; gap: 12px;
+  text-decoration: none;
+}
+.logo-icon {
+  height: 56px; width: auto;
+  display: flex; align-items: center; justify-content: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.logo-icon:hover { transform: scale(1.05); filter: brightness(1.2); }
+.logo-icon img { height: 56px; width: auto; object-fit: contain; }
+
+nav { display: flex; align-items: center; gap: 1.8rem; }
+nav a {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.25s;
+  position: relative;
+}
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; left: 0;
+  width: 0; height: 1px;
+  background: var(--cyan);
+  transition: width 0.3s ease;
+}
+nav a:hover { color: var(--white); }
+nav a:hover::after { width: 100%; }
+
+.btn-nav {
+  background: linear-gradient(135deg, var(--blue), var(--purple));
+  color: var(--white) !important;
+  padding: 0.5rem 1.3rem;
+  border-radius: 6px;
+  font-weight: 700;
+  transition: opacity 0.25s, transform 0.2s !important;
+  box-shadow: 0 4px 20px rgba(77,104,242,0.3);
+}
+.btn-nav::after { display: none !important; }
+.btn-nav:hover { opacity: 0.9; transform: translateY(-1px) !important; box-shadow: 0 6px 28px rgba(77,104,242,0.45) !important; }
+
+/* Language switcher in header */
+.lang-btn {
+  display: flex; align-items: center;
+  text-decoration: none !important;
+  opacity: 0.7;
+  transition: opacity 0.2s, transform 0.2s !important;
+}
+.lang-btn::after { display: none !important; }
+.lang-btn:hover { opacity: 1; transform: scale(1.08) !important; }
+.lang-btn img { width: 26px; height: auto; border-radius: 4px; display: block; }
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+  padding: 4px;
+}
+.hamburger span {
+  display: block;
+  width: 24px; height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ================================================================
+   SIDEBAR MOBILE MENU
+================================================================ */
+.sidebar-overlay {
+  position: fixed; inset: 0;
+  background: rgba(2,0,16,0.7);
+  backdrop-filter: blur(4px);
+  z-index: 1050;
+  opacity: 0; visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.sidebar-overlay.open { opacity: 1; visibility: visible; }
+
+.sidebar {
+  position: fixed;
+  top: 0; right: 0;
+  width: 300px; height: 100%;
+  background: var(--deep);
+  border-left: 1px solid var(--border);
+  z-index: 1060;
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(.4,0,.2,1);
+  display: flex; flex-direction: column;
+  padding: 2rem;
+  gap: 0;
+  overflow-y: auto;
+}
+.sidebar.open { transform: translateX(0); }
+
+.sidebar-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+.sidebar-logo img { height: 48px; }
+.sidebar-close {
+  background: none; border: none; cursor: pointer;
+  color: var(--muted);
+  font-size: 1.2rem;
+  transition: color 0.2s;
+  padding: 4px;
+}
+.sidebar-close:hover { color: var(--white); }
+
+.sidebar-nav {
+  display: flex; flex-direction: column; gap: 0.3rem;
+  flex: 1;
+}
+.sidebar-nav a {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 0.9rem 1rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+  display: flex; align-items: center; gap: 0.8rem;
+}
+.sidebar-nav a i { color: var(--blue); width: 16px; font-size: 0.8rem; }
+.sidebar-nav a:hover {
+  color: var(--white);
+  background: rgba(77,104,242,0.08);
+  border-color: var(--border);
+}
+
+.sidebar-cta {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  display: flex; flex-direction: column; gap: 0.8rem;
+}
+
+.sidebar-lang {
+  display: flex; align-items: center; gap: 0.6rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+.sidebar-lang img { width: 22px; border-radius: 3px; opacity: 0.7; }
+.sidebar-lang a { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: var(--muted); transition: color 0.2s; }
+.sidebar-lang a:hover { color: var(--white); }
+.sidebar-lang a img { opacity: 1; }
+
+/* ================================================================
+   HERO
+================================================================ */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 8rem 2rem 5rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content { max-width: 660px; }
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(0,212,255,0.07);
+  border: 1px solid rgba(0,212,255,0.25);
+  border-radius: 100px;
+  padding: 0.3rem 0.9rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.62rem;
+  color: var(--cyan);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  animation: fadeUp 0.8s 0.1s ease both;
+}
+.hero-badge::before {
+  content: '';
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--cyan);
+  animation: blink 1.8s ease-in-out infinite;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.2} }
+
+.hero h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3.4rem, 6.5vw, 6.5rem);
+  font-weight: 400;
+  line-height: 1.0;
+  letter-spacing: 0.02em;
+  margin-bottom: 1.4rem;
+  animation: fadeUp 0.8s 0.2s ease both;
+}
+.hero h1 .accent {
+  background: linear-gradient(120deg, var(--blue), var(--cyan), var(--purple));
+  background-size: 200% auto;
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  animation: gradShift 5s linear infinite;
+}
+@keyframes gradShift { to { background-position: 200% center; } }
+
+.hero p {
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.75;
+  max-width: 520px;
+  margin-bottom: 2rem;
+  animation: fadeUp 0.8s 0.3s ease both;
+}
+
+.hero-cta {
+  display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 2.5rem;
+  animation: fadeUp 0.8s 0.4s ease both;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--border);
+  padding-top: 1.8rem;
+  animation: fadeUp 0.8s 0.5s ease both;
+}
+.stat { display: flex; flex-direction: column; }
+.stat-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  background: linear-gradient(135deg, var(--white), var(--bright));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  line-height: 1;
+}
+.stat-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.55rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 2px;
+}
+.stat-divider {
+  width: 1px;
+  background: var(--border);
+  align-self: stretch;
+}
+
+/* ================================================================
+   BUTTONS
+================================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.8rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.28s cubic-bezier(.4,0,.2,1);
+  cursor: pointer;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+.btn::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.08) 50%, transparent 100%);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+.btn:hover::before { transform: translateX(100%); }
+.btn i { transition: transform 0.2s; }
+.btn:hover i { transform: translateX(3px); }
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--blue), #3a52d4);
+  color: var(--white);
+  box-shadow: 0 4px 24px rgba(77,104,242,0.35);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 40px rgba(77,104,242,0.55);
+  color: var(--white);
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--cyan);
+  border: 1px solid rgba(0,212,255,0.35);
+  backdrop-filter: blur(4px);
+}
+.btn-ghost:hover {
+  background: rgba(0,212,255,0.07);
+  transform: translateY(-2px);
+  border-color: rgba(0,212,255,0.6);
+  color: var(--cyan);
+}
+
+/* ================================================================
+   SECTIONS BASE
+================================================================ */
+.section {
+  position: relative; z-index: 1;
+  padding: 7rem 0;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.eyebrow {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--cyan);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+.eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--cyan); }
+
+.sec-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.6rem, 4.5vw, 4rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+}
+.sec-title span {
+  background: linear-gradient(120deg, var(--blue), var(--cyan));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.sec-sub {
+  margin-top: 0.6rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--border) 30%, rgba(77,104,242,0.4) 50%, var(--border) 70%, transparent 100%);
+  position: relative; z-index: 1;
+}
+.section-divider::after {
+  content: '';
+  position: absolute;
+  width: 60px; height: 1px;
+  background: var(--cyan);
+  left: 50%; top: 0;
+  transform: translateX(-50%);
+  box-shadow: 0 0 12px var(--cyan);
+  animation: scanLine 4s ease-in-out infinite;
+}
+@keyframes scanLine {
+  0%,100% { opacity: 0.3; width: 40px; }
+  50%     { opacity: 1; width: 80px; }
+}
+
+/* scroll reveal */
+.reveal, .reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s cubic-bezier(.4,0,.2,1), transform 0.65s cubic-bezier(.4,0,.2,1);
+}
+.reveal.up, .reveal-stagger > *.up { opacity: 1; transform: translateY(0); }
+.reveal-stagger > *:nth-child(1) { transition-delay: 0.05s; }
+.reveal-stagger > *:nth-child(2) { transition-delay: 0.12s; }
+.reveal-stagger > *:nth-child(3) { transition-delay: 0.19s; }
+.reveal-stagger > *:nth-child(4) { transition-delay: 0.26s; }
+.reveal-stagger > *:nth-child(5) { transition-delay: 0.33s; }
+.reveal-stagger > *:nth-child(6) { transition-delay: 0.40s; }
+.reveal-stagger > *:nth-child(7) { transition-delay: 0.47s; }
+.reveal-stagger > *:nth-child(8) { transition-delay: 0.54s; }
+.reveal-stagger > *:nth-child(9) { transition-delay: 0.61s; }
+
+/* ================================================================
+   SERVICES / CARDS GRID
+================================================================ */
+.services-section { background: var(--deep); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  backdrop-filter: blur(8px);
+  display: flex; flex-direction: column;
+}
+.card:hover {
+  border-color: rgba(77,104,242,0.45);
+  box-shadow: 0 24px 60px rgba(77,104,242,0.12);
+  transform: translateY(-4px);
+}
+
+.card-media {
+  position: relative; overflow: hidden;
+  height: 180px;
+  background: linear-gradient(135deg, var(--ink), #06001a);
+}
+.card-media img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6) saturate(0.7);
+  transition: filter 0.5s, transform 0.7s;
+}
+.card:hover .card-media img {
+  filter: brightness(0.78) saturate(0.9);
+  transform: scale(1.06);
+}
+.card-media::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, rgba(13,1,48,0.8) 100%);
+  pointer-events: none;
+}
+.card-media-logo img { object-fit: contain; padding: 1.5rem; background: #0a0f1a; }
+.card-media-logo { background: #0a0f1a; }
+.card-media-dark img { filter: brightness(0.9) saturate(0); }
+
+.card-body {
+  padding: 1.6rem 1.8rem 1.8rem;
+  display: flex; flex-direction: column; flex: 1;
+}
+
+.card-icon {
+  width: 44px; height: 44px;
+  background: rgba(77,104,242,0.12);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem;
+  color: var(--cyan);
+  margin-bottom: 1rem;
+  transition: background 0.3s, border-color 0.3s;
+}
+.card:hover .card-icon {
+  background: rgba(77,104,242,0.2);
+  border-color: rgba(77,104,242,0.4);
+}
+
+.card-body h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.6rem;
+  line-height: 1.15;
+}
+.card-body p {
+  font-size: 0.87rem;
+  color: var(--muted);
+  line-height: 1.65;
+  flex: 1;
+  margin-bottom: 1.2rem;
+}
+
+.card-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  color: var(--cyan);
+  text-decoration: none;
+  padding: 0.55rem 1rem;
+  border: 1px solid rgba(0,212,255,0.25);
+  border-radius: 6px;
+  transition: all 0.25s;
+  align-self: flex-start;
+}
+.card-btn:hover {
+  background: rgba(0,212,255,0.07);
+  border-color: rgba(0,212,255,0.5);
+  color: var(--white);
+  transform: translateY(-1px);
+}
+.card-btn i { font-size: 0.75rem; }
+
+/* ================================================================
+   BENEFITS / VANTAGENS
+================================================================ */
+.benefits-section { background: var(--void); }
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  overflow: hidden;
+  margin-top: 3.5rem;
+  margin-bottom: 1px;
+}
+.benefit-card {
+  background: var(--void);
+  padding: 2.4rem 2rem;
+  transition: background 0.35s;
+  position: relative; overflow: hidden;
+  text-align: center;
+}
+.benefit-card::after {
+  content: '';
+  position: absolute; top: 0; left: 0;
+  width: 3px; height: 0;
+  background: linear-gradient(180deg, var(--cyan), var(--purple));
+  transition: height 0.45s cubic-bezier(.4,0,.2,1);
+}
+.benefit-card:hover { background: rgba(13,1,48,0.85); }
+.benefit-card:hover::after { height: 100%; }
+
+.benefit-icon {
+  width: 60px; height: 60px;
+  background: rgba(77,104,242,0.1);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem;
+  color: var(--cyan);
+  margin: 0 auto 1.2rem;
+  transition: background 0.3s, border-color 0.3s;
+}
+.benefit-card:hover .benefit-icon {
+  background: rgba(77,104,242,0.18);
+  border-color: rgba(77,104,242,0.4);
+}
+.benefit-card h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+}
+.benefit-card p { font-size: 0.85rem; color: var(--muted); line-height: 1.55; }
+
+/* highlights strip */
+.highlights-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 0 0 18px 18px;
+  overflow: hidden;
+  border-top: none;
+}
+.highlight-item {
+  background: rgba(13,1,48,0.4);
+  padding: 1.4rem 1.8rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  transition: background 0.25s;
+}
+.highlight-item:hover { background: rgba(13,1,48,0.7); }
+.highlight-item > i {
+  font-size: 1.3rem;
+  color: var(--blue);
+  flex-shrink: 0;
+}
+.highlight-item h4 {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.15rem;
+}
+.highlight-item p { font-size: 0.78rem; color: var(--muted); }
+
+/* ================================================================
+   PROCESS
+================================================================ */
+.process-section { background: var(--deep); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 3rem;
+}
+.process-step {
+  position: relative;
+  padding: 2rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  transition: border-color 0.3s, transform 0.3s;
+}
+.process-step:hover { border-color: rgba(77,104,242,0.4); transform: translateY(-4px); }
+.process-step::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--blue), var(--cyan));
+  border-radius: 14px 14px 0 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.process-step:hover::before { opacity: 1; }
+
+.step-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  background: linear-gradient(135deg, var(--blue), var(--cyan));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+  line-height: 1;
+  display: block;
+}
+.step-content h3 {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  color: var(--white);
+}
+.step-content p { font-size: 0.87rem; color: var(--muted); line-height: 1.65; }
+
+.process-cta { text-align: center; margin-top: 1rem; }
+
+/* ================================================================
+   CONTACT
+================================================================ */
+.contact-section { 
+  background: var(--void); 
+  padding: 8rem 0;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: start;
+}
+
+.contact-left h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  margin: 0.8rem 0 1.2rem;
+  line-height: 1.05;
+}
+.contact-left h2 span {
+  background: linear-gradient(120deg, var(--blue), var(--cyan));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.contact-left > p { 
+  font-size: 0.95rem; 
+  color: var(--muted); 
+  line-height: 1.7; 
+  margin-bottom: 2.5rem; 
+}
+
+.contact-info-list { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 1.2rem; 
+}
+.contact-info-item {
+  display: flex; 
+  gap: 1.2rem; 
+  align-items: flex-start;
+}
+.contact-info-item > i {
+  width: 48px; 
+  height: 48px;
+  background: rgba(77,104,242,0.08);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  color: var(--cyan);
+  flex-shrink: 0;
+  font-size: 1rem;
+}
+.contact-info-item div { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 0.2rem; 
+  padding-top: 0.1rem;
+}
+.contact-info-item strong { 
+  font-size: 0.85rem; 
+  font-weight: 600; 
+  color: var(--white); 
+  font-family: 'Space Mono', monospace; 
+  letter-spacing: 0.04em; 
+}
+.contact-info-item span, 
+.contact-info-item a { 
+  font-size: 0.9rem; 
+  color: var(--muted); 
+  text-decoration: none; 
+  line-height: 1.5;
+}
+.contact-info-item a:hover { color: var(--cyan); }
+
+.contact-channels { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 1rem; 
+  padding-top: 0.5rem;
+}
+.channels-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.channel-btn {
+  display: flex; 
+  align-items: center; 
+  gap: 1.2rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.2rem 1.6rem;
+  text-decoration: none;
+  color: var(--white);
+  transition: all 0.25s;
+}
+.channel-btn:hover {
+  transform: translateX(8px);
+  border-color: rgba(77,104,242,0.4);
+  background: rgba(13,1,48,0.8);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+.channel-btn > i:first-child { 
+  font-size: 1.4rem; 
+  flex-shrink: 0; 
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(77,104,242,0.08);
+  border-radius: 10px;
+}
+.channel-btn > i:last-child { 
+  margin-left: auto; 
+  color: var(--muted); 
+  font-size: 0.85rem; 
+  transition: transform 0.25s;
+}
+.channel-btn:hover > i:last-child { transform: translateX(4px); color: var(--cyan); }
+.channel-btn span { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 0.2rem; 
+}
+.channel-btn span strong { 
+  font-size: 0.9rem; 
+  font-weight: 600; 
+  font-family: 'Space Mono', monospace;
+  letter-spacing: 0.03em;
+}
+.channel-btn span small { 
+  font-size: 0.8rem; 
+  color: var(--muted); 
+}
+.channel-whatsapp > i:first-child { color: #25D366; }
+.channel-email > i:first-child { color: #e74c3c; }
+.channel-instagram > i:first-child { 
+  background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); 
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  color: transparent; 
+}
+
+/* ================================================================
+   FOOTER
+================================================================ */
+footer {
+  background: var(--deep);
+  border-top: 1px solid var(--border);
+  position: relative; z-index: 1;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 3rem;
+  padding: 4rem 0 2rem;
+}
+.footer-brand > p { font-size: 0.87rem; color: var(--muted); line-height: 1.7; margin-top: 1rem; max-width: 260px; }
+.footer-col h5 {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 1.2rem;
+}
+.footer-col a {
+  display: block;
+  font-size: 0.87rem;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 0.3rem 0;
+  transition: color 0.2s;
+}
+.footer-col a:hover { color: var(--white); }
+
+.socials { display: flex; gap: 0.7rem; margin-top: 1.2rem; }
+.social {
+  width: 36px; height: 36px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--muted);
+  transition: all 0.25s;
+  font-size: 0.85rem;
+}
+.social:hover { border-color: rgba(77,104,242,0.5); color: var(--cyan); background: rgba(77,104,242,0.08); }
+
+.footer-bottom {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer-copy { font-family: 'Space Mono', monospace; font-size: 0.65rem; color: var(--muted); letter-spacing: 0.06em; }
+.footer-copy a { color: var(--muted); text-decoration: none; }
+.footer-copy a:hover { color: var(--cyan); }
+.footer-sig { font-family: 'Space Mono', monospace; font-size: 0.6rem; color: rgba(120,120,170,0.5); letter-spacing: 0.15em; }
+
+/* ================================================================
+   WHATSAPP FLOAT
+================================================================ */
+.wa-float {
+  position: fixed;
+  bottom: 2rem; right: 2rem;
+  width: 54px; height: 54px;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  z-index: 900;
+  box-shadow: 0 4px 24px rgba(37,211,102,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.wa-float:hover { transform: scale(1.1); box-shadow: 0 8px 36px rgba(37,211,102,0.6); }
+.wa-float svg { width: 26px; height: 26px; fill: #fff; }
+
+/* ================================================================
+   RESPONSIVE
+================================================================ */
+@media (max-width: 1024px) {
+  .cards-grid { grid-template-columns: repeat(2, 1fr); }
+  .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+  .highlights-strip { grid-template-columns: repeat(2, 1fr); }
+  .process-grid { grid-template-columns: repeat(2, 1fr); }
+  .contact-wrapper { grid-template-columns: 1fr; gap: 4rem; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  nav { display: none; }
+  .hamburger { display: flex; }
   
-  <!-- Google Fonts: Clash Display + Inter (modern premium) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Clash+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  .hero { padding: 7rem 1.5rem 4rem; }
+  .hero h1 { font-size: clamp(2.8rem, 10vw, 4.5rem); }
   
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="print.css" media="print">
-  <style>
-    /* =============================================
-       P.B WEB — REDESIGN PREMIUM V2
-       Modern Geometric · Electric Accents · Clean
-       ============================================= */
-    
-    /* ── Variables ─────────────────────────────── */
-    :root {
-      --bg:          #05080f;
-      --bg-2:        #0a0f1a;
-      --bg-card:     #0e1422;
-      --bg-card-h:   #131b2c;
-      --border:      rgba(255,255,255,0.06);
-      --border-h:    rgba(0,210,255,0.3);
-    
-      --accent:      #00d4ff;
-      --accent-2:    #0affd4;
-      --accent-glow: rgba(0,212,255,0.15);
-    
-      --text:        #f0f4fa;
-      --text-muted:  #7e8aa8;
-      --text-dim:    #3e4a66;
-    
-      --green:       #00e5a0;
-      --orange:      #ff7c4d;
-      --yellow:      #ffd84d;
-      --pink:        #ff4db8;
-    
-      --radius-sm:   10px;
-      --radius-md:   16px;
-      --radius-lg:   24px;
-      --radius-pill: 200px;
-    
-      --transition:  0.25s cubic-bezier(0.2, 0, 0, 1);
-      --shadow-card: 0 12px 32px -12px rgba(0,0,0,0.6);
-      --shadow-glow: 0 0 48px rgba(0,212,255,0.08);
-    }
-    
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    html {
-      scroll-behavior: smooth;
-      font-size: 16px;
-    }
-    
-    body {
-      font-family: 'Inter', system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.5;
-      overflow-x: hidden;
-      -webkit-font-smoothing: antialiased;
-    }
-    
-    h1, h2, h3, h4, .logo-link, .btn, .section-tag, .step-num, .stat-num {
-      font-family: 'Clash Display', 'Inter', sans-serif;
-    }
-    
-    /* Hero Title & Process numbers font */
-    .hero-content h1, .step-num {
-      font-family: 'Clash Display', sans-serif;
-      font-weight: 700;
-    }
-    
-    p, li, a, span {
-      font-family: 'Inter', sans-serif;
-    }
-    
-    .container {
-      width: min(90%, 1280px);
-      margin: 0 auto;
-      padding: 0 1rem;
-    }
-    
-    /* Language Switcher */
-    .lang-switcher {
-      position: fixed;
-      top: 20px;
-      right: 90px;
-      z-index: 1100;
-    }
-    .lang-switcher img {
-      width: 28px;
-      height: auto;
-      border-radius: 6px;
-      opacity: 0.7;
-      transition: opacity 0.2s, transform 0.2s;
-      cursor: pointer;
-    }
-    .lang-switcher img:hover {
-      opacity: 1;
-      transform: scale(1.08);
-    }
-    
-    /* Navbar */
-    .navbar {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-      transition: background 0.3s, backdrop-filter 0.3s, padding 0.3s;
-      padding: 1.25rem 0;
-    }
-    .navbar.scrolled {
-      background: rgba(5, 8, 15, 0.92);
-      backdrop-filter: blur(20px);
-      box-shadow: 0 1px 0 var(--border), 0 8px 24px -8px rgba(0,0,0,0.3);
-      padding: 0.7rem 0;
-    }
-    .navbar .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .logo-img {
-      height: 42px;
-      width: auto;
-      filter: brightness(1.05);
-    }
-    .navbar nav ul {
-      display: flex;
-      gap: 0.5rem;
-    }
-    .navbar nav ul li a {
-      font-family: 'Clash Display', sans-serif;
-      font-size: 0.85rem;
-      font-weight: 500;
-      letter-spacing: 0.02em;
-      color: var(--text-muted);
-      padding: 0.5rem 1rem;
-      border-radius: var(--radius-pill);
-      transition: all 0.2s;
-    }
-    .navbar nav ul li a:hover {
-      color: var(--text);
-      background: rgba(255,255,255,0.04);
-    }
-    .nav-cta {
-      background: rgba(0,212,255,0.1) !important;
-      color: var(--accent) !important;
-      border: 1px solid rgba(0,212,255,0.2) !important;
-    }
-    .nav-cta:hover {
-      background: rgba(0,212,255,0.2) !important;
-      color: white !important;
-    }
-    
-    /* Mobile toggle */
-    .menu-toggle {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      background: none;
-      border: none;
-      cursor: pointer;
-    }
-    .menu-toggle span {
-      width: 24px;
-      height: 2px;
-      background: var(--text);
-      border-radius: 2px;
-      transition: 0.2s;
-    }
-    
-    /* Buttons */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.6rem;
-      font-family: 'Clash Display', sans-serif;
-      font-weight: 600;
-      font-size: 0.9rem;
-      border-radius: var(--radius-pill);
-      padding: 0.8rem 2rem;
-      transition: all 0.25s;
-      cursor: pointer;
-      border: none;
-    }
-    .btn-primary {
-      background: var(--accent);
-      color: #05080f;
-      box-shadow: 0 4px 12px rgba(0,212,255,0.25);
-    }
-    .btn-primary:hover {
-      background: #40e0ff;
-      transform: translateY(-2px);
-      box-shadow: 0 12px 28px -8px rgba(0,212,255,0.4);
-    }
-    .btn-primary i {
-      transition: transform 0.2s;
-    }
-    .btn-primary:hover i {
-      transform: translateX(4px);
-    }
-    .btn-ghost {
-      background: transparent;
-      border: 1px solid var(--border);
-      color: var(--text-muted);
-    }
-    .btn-ghost:hover {
-      border-color: rgba(255,255,255,0.2);
-      background: rgba(255,255,255,0.03);
-      color: var(--text);
-    }
-    
-    /* Section shared */
-    .section {
-      padding: 6rem 0;
-    }
-    .section-header {
-      text-align: center;
-      max-width: 680px;
-      margin: 0 auto 4rem;
-    }
-    .section-header h2 {
-      font-size: clamp(2rem, 4.5vw, 3rem);
-      margin: 0.8rem 0 1rem;
-      letter-spacing: -0.02em;
-    }
-    .section-header p {
-      color: var(--text-muted);
-      font-size: 1rem;
-    }
-    .section-tag {
-      font-family: 'Clash Display', sans-serif;
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      background: rgba(0,212,255,0.08);
-      border: 1px solid rgba(0,212,255,0.2);
-      border-radius: var(--radius-pill);
-      padding: 0.3rem 1rem;
-      display: inline-block;
-    }
-    
-    /* Scroll animations */
-    [data-aos] {
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-    [data-aos].visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    
-    /* Hero */
-    .hero {
-      position: relative;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-      padding-top: 80px;
-    }
-    .hero-bg-grid {
-      position: absolute;
-      inset: 0;
-      background-image: linear-gradient(rgba(0,212,255,0.03) 1px, transparent 1px),
-                        linear-gradient(90deg, rgba(0,212,255,0.03) 1px, transparent 1px);
-      background-size: 50px 50px;
-      mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 20%, transparent 90%);
-      animation: drift 18s linear infinite;
-    }
-    @keyframes drift {
-      from { background-position: 0 0; }
-      to { background-position: 50px 50px; }
-    }
-    .hero-orb {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(100px);
-      pointer-events: none;
-    }
-    .hero-orb-1 {
-      width: 500px; height: 500px;
-      background: radial-gradient(circle, rgba(0,212,255,0.12), transparent);
-      top: -150px; left: -100px;
-    }
-    .hero-orb-2 {
-      width: 450px; height: 450px;
-      background: radial-gradient(circle, rgba(10,255,212,0.08), transparent);
-      bottom: -80px; right: 0;
-    }
-    .hero-content {
-      max-width: 700px;
-      position: relative;
-      z-index: 2;
-    }
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 1.5rem;
-    }
-    .badge-dot {
-      width: 8px; height: 8px;
-      background: var(--accent);
-      border-radius: 50%;
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(0,212,255,0.6); }
-      70% { box-shadow: 0 0 0 10px rgba(0,212,255,0); }
-      100% { box-shadow: 0 0 0 0 rgba(0,212,255,0); }
-    }
-    .hero-content h1 {
-      font-size: clamp(2.5rem, 7vw, 5rem);
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 1.5rem;
-    }
-    .hero-content h1 em {
-      font-style: normal;
-      color: var(--accent);
-      position: relative;
-    }
-    .hero-content p {
-      font-size: 1.1rem;
-      color: var(--text-muted);
-      max-width: 520px;
-      margin-bottom: 2rem;
-    }
-    .hero-actions {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin-bottom: 3rem;
-    }
-    .hero-stats {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      background: rgba(255,255,255,0.02);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 1rem 2rem;
-      width: fit-content;
-      backdrop-filter: blur(4px);
-    }
-    .stat-num {
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: var(--accent);
-      line-height: 1;
-    }
-    .stat-label {
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      color: var(--text-muted);
-    }
-    .stat-divider {
-      width: 1px;
-      height: 32px;
-      background: var(--border);
-    }
-    .hero-scroll-hint {
-      position: absolute;
-      bottom: 2rem;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-size: 0.7rem;
-      color: var(--text-dim);
-      gap: 0.4rem;
-    }
-    
-    /* Cards Grid */
-    .cards-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
-      gap: 1.8rem;
-    }
-    .card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      transition: transform 0.25s, border-color 0.2s;
-    }
-    .card:hover {
-      transform: translateY(-6px);
-      border-color: var(--border-h);
-    }
-    .card-media {
-      height: 200px;
-      overflow: hidden;
-      background: #000;
-    }
-    .card-media img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.4s;
-    }
-    .card:hover .card-media img {
-      transform: scale(1.05);
-    }
-    .card-media-logo {
-      background: #f8f9fc;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1.5rem;
-    }
-    .card-media-logo img {
-      object-fit: contain;
-      max-height: 110px;
-      width: auto;
-    }
-    .card-media-dark {
-      background: #0a0a0a;
-    }
-    .card-body {
-      padding: 1.5rem 1.8rem 1.8rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-    /* Unified icon style for all cards */
-    .card-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      background: rgba(0,212,255,0.08);
-      border: 1px solid rgba(0,212,255,0.15);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-      color: var(--accent);
-    }
-    .card-body h3 {
-      font-size: 1.2rem;
-      font-weight: 600;
-    }
-    .card-body p {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      line-height: 1.5;
-    }
-    .card-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: rgba(37,211,102,0.08);
-      color: #2ecc71;
-      border: 1px solid rgba(46,204,113,0.2);
-      border-radius: var(--radius-pill);
-      padding: 0.5rem 1.2rem;
-      font-size: 0.75rem;
-      font-weight: 600;
-      width: fit-content;
-      transition: 0.2s;
-    }
-    .card-btn:hover {
-      background: #2ecc71;
-      color: #000;
-      border-color: transparent;
-    }
-    
-    /* Benefits */
-    .benefits-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 3rem;
-    }
-    .benefit-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 2rem;
-      text-align: center;
-      transition: 0.2s;
-    }
-    .benefit-card:hover {
-      border-color: var(--border-h);
-    }
-    .benefit-icon {
-      width: 64px;
-      height: 64px;
-      background: rgba(0,212,255,0.08);
-      border-radius: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 1.25rem;
-      font-size: 1.6rem;
-      color: var(--accent);
-    }
-    .highlight-item i {
-      color: var(--accent);
-    }
-    .highlights-strip {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      background: var(--border);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-    }
-    .highlight-item {
-      background: var(--bg-card);
-      padding: 1.5rem;
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-    }
-    
-    /* Process section */
-    .process-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 2rem;
-      margin-bottom: 3rem;
-    }
-    .process-step {
-      position: relative;
-    }
-    .step-num {
-      font-size: 3.8rem;
-      font-weight: 700;
-      background: linear-gradient(135deg, var(--accent), var(--accent-2));
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      opacity: 0.7;
-      margin-bottom: 1rem;
-      display: inline-block;
-    }
-    .step-content h3 {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-    }
-    .step-content p {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-    }
-    .process-cta {
-      text-align: center;
-    }
-    
-    /* Contact */
-    .contact-wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-    }
-    .contact-info-item {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 1.2rem;
-    }
-    .contact-info-item i {
-      width: 40px;
-      height: 40px;
-      background: rgba(0,212,255,0.08);
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--accent);
-    }
-    .channel-btn {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 1rem 1.4rem;
-      transition: 0.2s;
-      margin-bottom: 0.8rem;
-    }
-    .channel-btn:hover {
-      transform: translateX(5px);
-    }
-    .channel-whatsapp i:first-child { color: #25D366; }
-    .channel-email i:first-child { color: #e74c3c; }
-    .channel-instagram i:first-child {
-      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-    
-    /* Footer */
-    footer {
-      background: var(--bg-2);
-      border-top: 1px solid var(--border);
-      padding: 3rem 0 2rem;
-    }
-    .footer-inner {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin-bottom: 2rem;
-    }
-    .footer-links {
-      display: flex;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
-    .footer-social a {
-      width: 36px;
-      height: 36px;
-      background: rgba(255,255,255,0.04);
-      border-radius: 10px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      transition: 0.2s;
-    }
-    .footer-social a:hover {
-      background: rgba(0,212,255,0.1);
-      color: var(--accent);
-    }
-    .footer-bottom {
-      border-top: 1px solid var(--border);
-      padding-top: 1.5rem;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      font-size: 0.8rem;
-    }
-    
-    @media (max-width: 1024px) {
-      .process-grid { grid-template-columns: repeat(2,1fr); }
-      .contact-wrapper { grid-template-columns: 1fr; gap: 2rem; }
-    }
-    @media (max-width: 768px) {
-      .menu-toggle { display: flex; }
-      .navbar nav {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: rgba(5,8,15,0.98);
-        backdrop-filter: blur(16px);
-        transform: translateY(-20px);
-        opacity: 0;
-        visibility: hidden;
-        transition: 0.2s;
-      }
-      .navbar nav.active {
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
-      }
-      .navbar nav ul {
-        flex-direction: column;
-        padding: 1rem;
-      }
-      .cards-grid { grid-template-columns: 1fr; }
-      .process-grid { grid-template-columns: 1fr; }
-      .hero-stats { display: none; }
-      .hero-actions { flex-direction: column; align-items: flex-start; }
-      .step-connector { display: none; }
-      .footer-inner { flex-direction: column; }
-    }
-    @media print {
-      .navbar, .hero-bg-grid, .lang-switcher, .hero-scroll-hint { display: none; }
-      .qrcode-print { display: block; text-align: center; margin-top: 2rem; }
-    }
-  </style>
+  .cards-grid { grid-template-columns: 1fr; }
+  .benefits-grid { grid-template-columns: 1fr 1fr; }
+  .highlights-strip { grid-template-columns: 1fr 1fr; }
+  .process-grid { grid-template-columns: 1fr; }
+  
+  .hero-stats { flex-direction: row; }
+  
+  .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+  
+  .header-inner { padding: 0 1.5rem; }
+  .container { padding: 0 1.5rem; }
+  .section { padding: 5rem 0; }
+  .contact-section { padding: 6rem 0; }
+  
+  .sidebar { width: 280px; }
+  
+  .contact-wrapper { gap: 3rem; }
+  .contact-info-item > i { width: 42px; height: 42px; }
+  .channel-btn { padding: 1rem 1.3rem; }
+}
+
+@media (max-width: 480px) {
+  .benefits-grid { grid-template-columns: 1fr; }
+  .highlights-strip { grid-template-columns: 1fr; }
+  .hero-stats { display: none; }
+}
+
+/* print */
+@media print {
+  #header, .wa-float, .hamburger, .sidebar, .sidebar-overlay { display: none; }
+}
+</style>
 </head>
 <body>
-  <div class="lang-switcher">
-    <a href="https://pbweb.com.br/es/" title="Español (Bolivia)">
-      <img src="https://flagcdn.com/w40/bo.png" alt="Español">
+
+<div id="scrollProgress"></div>
+<div class="ambient">
+  <div class="ambient-orb"></div>
+  <div class="ambient-orb"></div>
+  <div class="ambient-orb"></div>
+</div>
+
+<!-- SIDEBAR OVERLAY -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- SIDEBAR MENU -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="#inicio" class="sidebar-logo"><img src="img/logo.png" alt="P&B Web"></a>
+    <button class="sidebar-close" id="sidebarClose" aria-label="Fechar menu">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <nav class="sidebar-nav">
+    <a href="#inicio"><i class="fas fa-home"></i> Início</a>
+    <a href="#servicos"><i class="fas fa-store"></i> Serviços</a>
+    <a href="#vantagens"><i class="fas fa-star"></i> Vantagens</a>
+    <a href="#processo"><i class="fas fa-cogs"></i> Como Funciona</a>
+    <a href="#contato"><i class="fas fa-envelope"></i> Contato</a>
+  </nav>
+  <div class="sidebar-cta">
+    <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá! Gostaria de solicitar um orçamento para criação de loja virtual completa. Podem me ajudar?" class="btn btn-primary" target="_blank">
+      <i class="fab fa-whatsapp"></i> Solicitar Orçamento
     </a>
   </div>
-  <header class="navbar" id="navbar">
-    <div class="container">
-      <a href="https://pbweb.com.br/" class="logo-link"><img src="img/logo.png" alt="P&B Web" class="logo-img"></a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
-      <nav id="mainNav">
-        <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#vantagens">Vantagens</a></li>
-          <li><a href="#processo">Como Funciona</a></li>
-          <li><a href="#contato" class="nav-cta">Contato</a></li>
-        </ul>
-      </nav>
+  <div class="sidebar-lang">
+    <span>Idioma:</span>
+    <a href="https://pbweb.com.br/es/" title="Español (Bolivia)">
+      <img src="https://flagcdn.com/w40/bo.png" alt="Boliviano">
+      <span>Español</span>
+    </a>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="header-inner">
+    <a href="#inicio" class="logo">
+      <div class="logo-icon">
+        <img src="img/logo.png" alt="P&B Web">
+      </div>
+    </a>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#vantagens">Vantagens</a>
+      <a href="#processo">Como Funciona</a>
+      <a href="https://pbweb.com.br/es/" class="lang-btn" title="Español (Bolivia)">
+        <img src="https://flagcdn.com/w40/bo.png" alt="Boliviano">
+      </a>
+      <a href="#contato" class="btn-nav">Contato</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section id="inicio" class="hero" style="position:relative;z-index:1;">
+  <div class="hero-content">
+    <div class="hero-badge">Especialistas em E-commerce</div>
+    <h1>Sua Loja Virtual<br><span class="accent">que Converte</span></h1>
+    <p>E-commerce com design responsivo, checkout otimizado e integração completa de pagamentos — construído para maximizar suas vendas.</p>
+    <div class="hero-cta">
+      <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá! Gostaria de solicitar um orçamento para criação de loja virtual completa. Podem me ajudar?" class="btn btn-primary" target="_blank">
+        Solicitar Orçamento <i class="fas fa-arrow-right"></i>
+      </a>
+      <a href="#servicos" class="btn btn-ghost">Ver Serviços</a>
     </div>
-  </header>
-  <main>
-    <section id="inicio" class="hero">
-      <div class="hero-bg-grid"></div>
-      <div class="hero-orb hero-orb-1"></div>
-      <div class="hero-orb hero-orb-2"></div>
-      <div class="container">
-        <div class="hero-content">
-          <div class="hero-badge"><span class="badge-dot"></span> Especialistas em E-commerce</div>
-          <h1>Sua Loja Virtual<br><em>que Converte</em></h1>
-          <p>E-commerce com design responsivo, checkout otimizado e integração completa de pagamentos — construído para maximizar suas vendas.</p>
-          <div class="hero-actions">
-            <a href="#contato" class="btn btn-primary">Solicitar Orçamento <i class="fas fa-arrow-right"></i></a>
-            <a href="#servicos" class="btn btn-ghost">Ver Serviços</a>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">100%</span>
+        <span class="stat-label">Responsivo</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">24h</span>
+        <span class="stat-label">Retorno</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">+10</span>
+        <span class="stat-label">Marketplaces</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SERVICES -->
+<section id="servicos" class="section services-section">
+  <div class="container">
+    <div class="reveal" style="text-align:center; max-width:600px; margin:0 auto 0;">
+      <div class="eyebrow">O Que Fazemos</div>
+      <h2 class="sec-title">Soluções Completas<br>para seu <span>E-commerce</span></h2>
+      <p class="sec-sub">Serviços especializados do desenvolvimento à otimização.</p>
+    </div>
+    <div class="cards-grid reveal-stagger">
+
+      <article class="card">
+        <div class="card-media"><img src="./img/site.webp" alt="Loja Virtual" loading="lazy"></div>
+        <div class="card-body">
+          <div class="card-icon"><i class="fas fa-store"></i></div>
+          <h3>Lojas Virtuais Completas</h3>
+          <p>E-commerces profissionais com catálogo, carrinho e integração com PagSeguro, Mercado Pago.</p>
+          <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá! Gostaria de um orçamento para criação de uma loja virtual completa com catálogo e checkout integrado. Podem me enviar mais informações?" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Orçamento Loja Virtual</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media"><img src="./img/checkout.webp" alt="Checkout" loading="lazy"></div>
+        <div class="card-body">
+          <div class="card-icon"><i class="fas fa-credit-card"></i></div>
+          <h3>Checkout Otimizado</h3>
+          <p>Reduza abandono de carrinho com fluxo seguro e múltiplas formas de pagamento.</p>
+          <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá! Tenho interesse em otimizar o checkout da minha loja virtual para reduzir abandono de carrinho. Podem me ajudar com isso?" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Otimizar Checkout</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media"><img src="./img/seo.webp" alt="SEO" loading="lazy"></div>
+        <div class="card-body">
+          <div class="card-icon"><i class="fas fa-search"></i></div>
+          <h3>SEO para E-commerce</h3>
+          <p>Tráfego orgânico e posicionamento no Google para seus produtos.</p>
+          <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá! Gostaria de saber mais sobre o serviço de SEO para e-commerce e como posso melhorar o posicionamento da minha loja no Google." class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> SEO para Loja Virtual</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media"><img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80" alt="Documentação"></div>
+        <div class="card-body">
+          <div class="card-icon"><i class="fas fa-certificate"></i></div>
+          <h3>Documentação e Certificado A1</h3>
+          <p>Certificado Digital A1, abertura de CNPJ e documentação jurídica.</p>
+          <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá! Preciso de ajuda com certificado digital A1 e abertura de CNPJ para minha loja virtual. Vocês podem me orientar sobre isso?" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Regularizar Empresa</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media"><img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=800&q=80" alt="Multicanal"></div>
+        <div class="card-body">
+          <div class="card-icon"><i class="fas fa-layer-group"></i></div>
+          <h3>Gestão Multicanal Completa</h3>
+          <p>Shopee, Shein, TikTok Shop, Mercado Livre com estoque integrado.</p>
+          <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá! Tenho interesse no serviço de gestão multicanal para marketplaces como Shopee, Shein, TikTok Shop e Mercado Livre. Gostaria de saber como funciona a integração de estoque." class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Gestão de Marketplaces</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media card-media-logo"><img src="https://i.pinimg.com/736x/4b/15/4d/4b154d1ddbd15deb479fc5e9bfc5dbf9.jpg" alt="Shein Partner"></div>
+        <div class="card-body">
+          <div class="card-icon"><i class="fas fa-medal"></i></div>
+          <h3>Cadastro Oficial Shein</h3>
+          <p>Parceiro oficial Shein, cadastro completo e suporte especializado.</p>
+          <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá! Gostaria de saber mais sobre o cadastro oficial como parceiro Shein e como posso começar a vender meus produtos na plataforma com suporte especializado." class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Cadastro Shein Partner</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media"><img src="https://interacaomarcasepatentes.com.br/wp-content/uploads/2021/10/2021-10-11-r-de-marca-registrada-1.jpg" alt="INPI"></div>
+        <div class="card-body">
+          <div class="card-icon"><i class="fas fa-registered"></i></div>
+          <h3>Registro de Marca no INPI</h3>
+          <p>Proteção da sua marca com consultoria e acompanhamento completo.</p>
+          <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá! Tenho interesse em registrar minha marca no INPI e gostaria de saber mais sobre o processo de consultoria e acompanhamento que vocês oferecem." class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Registrar Minha Marca</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" alt="Gestão"></div>
+        <div class="card-body">
+          <div class="card-icon"><i class="fas fa-cogs"></i></div>
+          <h3>Gestão Completa de E-commerce</h3>
+          <p>Administração diária, produtos, estoque e pedidos.</p>
+          <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá! Gostaria de contratar o serviço de gestão completa de e-commerce. Preciso de ajuda com administração diária, controle de produtos, estoque e pedidos. Podem me enviar detalhes?" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Contratar Gestão</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media card-media-logo"><img src="https://i.pinimg.com/736x/32/92/40/329240fd9fdaa1c07004b0a1788a42f9.jpg" alt="Shopee"></div>
+        <div class="card-body">
+          <div class="card-icon"><i class="fas fa-tag"></i></div>
+          <h3>Gestão de Loja Shopee</h3>
+          <p>Otimização de anúncios e campanhas para featured deals.</p>
+          <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá! Quero melhorar o desempenho da minha loja na Shopee com otimização de anúncios e campanhas para featured deals. Vocês podem me ajudar com gestão especializada?" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Gestão Shopee</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media card-media-logo"><img src="https://logospng.org/download/mercado-livre/logo-mercado-livre-4096.png" alt="Mercado Livre"></div>
+        <div class="card-body">
+          <div class="card-icon"><i class="fas fa-star"></i></div>
+          <h3>Gestão Mercado Livre</h3>
+          <p>Otimização de listings e anúncios premium.</p>
+          <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá! Gostaria de otimizar meus anúncios no Mercado Livre com listings premium e melhorar meu posicionamento na plataforma. Podem me enviar mais informações?" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Gestão Mercado Livre</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media card-media-logo card-media-dark"><img src="https://logospng.org/download/tiktok/logo-tiktok-icone-4096.png" alt="TikTok Shop"></div>
+        <div class="card-body">
+          <div class="card-icon"><i class="fab fa-tiktok"></i></div>
+          <h3>Gestão de TikTok Shop</h3>
+          <p>Vendas via vídeos, lives e TikTok Ads.</p>
+          <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá! Tenho interesse em começar a vender no TikTok Shop com gestão de vídeos, lives e TikTok Ads. Gostaria de saber como vocês podem me ajudar a aumentar minhas vendas na plataforma." class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Gestão TikTok Shop</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media"><img src="https://blog.unyleya.edu.br/wp-content/uploads/2017/06/9-tendencias-de-contabilidade-que-voce-precisa-dominar.jpeg" alt="Contabilidade"></div>
+        <div class="card-body">
+          <div class="card-icon"><i class="fas fa-calculator"></i></div>
+          <h3>Contabilidade Completa</h3>
+          <p>Apuração de impostos e gestão fiscal.</p>
+          <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá! Preciso de serviços de contabilidade completa para meu e-commerce, incluindo apuração de impostos e gestão fiscal. Vocês podem me enviar um orçamento?" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Contratar Contabilidade</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- BENEFITS -->
+<section id="vantagens" class="section benefits-section">
+  <div class="container">
+    <div class="reveal" style="text-align:center; max-width:600px; margin:0 auto 0;">
+      <div class="eyebrow">Por Que Escolher a P.B Web</div>
+      <h2 class="sec-title">Desenvolvemos E-commerces<br>que <span>Realmente Vendem</span></h2>
+      <p class="sec-sub">Foco em experiência do usuário e conversão.</p>
+    </div>
+    <div class="benefits-grid reveal-stagger">
+      <div class="benefit-card">
+        <div class="benefit-icon"><i class="fas fa-shopping-cart"></i></div>
+        <h3>E-commerce Completo</h3>
+        <p>Catálogo, carrinho, checkout e relatórios.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon"><i class="fas fa-mobile-alt"></i></div>
+        <h3>Otimizado para Mobile</h3>
+        <p>Design responsivo para todas as telas.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon"><i class="fas fa-lock"></i></div>
+        <h3>Pagamentos Seguros</h3>
+        <p>Gateways confiáveis e transações protegidas.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon"><i class="fas fa-truck"></i></div>
+        <h3>Gestão de Entregas</h3>
+        <p>Frete automático com Correios e transportadoras.</p>
+      </div>
+    </div>
+    <div class="highlights-strip reveal">
+      <div class="highlight-item">
+        <i class="fas fa-chart-line"></i>
+        <div><h4>Alta Conversão</h4><p>UX otimizada para vendas</p></div>
+      </div>
+      <div class="highlight-item">
+        <i class="fas fa-headset"></i>
+        <div><h4>Suporte Dedicado</h4><p>Atendimento ágil</p></div>
+      </div>
+      <div class="highlight-item">
+        <i class="fas fa-shield-alt"></i>
+        <div><h4>Segurança Total</h4><p>SSL e backups</p></div>
+      </div>
+      <div class="highlight-item">
+        <i class="fas fa-rocket"></i>
+        <div><h4>Alta Performance</h4><p>Sites rápidos e SEO</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- PROCESS -->
+<section id="processo" class="section process-section">
+  <div class="container">
+    <div class="reveal" style="text-align:center; max-width:600px; margin:0 auto 0;">
+      <div class="eyebrow">Como Funciona</div>
+      <h2 class="sec-title">Do Zero ao <span>Lançamento</span><br>em 4 Etapas</h2>
+      <p class="sec-sub">Processo transparente e estruturado.</p>
+    </div>
+    <div class="process-grid reveal-stagger">
+      <div class="process-step">
+        <span class="step-num">01</span>
+        <div class="step-content">
+          <h3>Planejamento</h3>
+          <p>Análise do nicho, concorrência e estrutura do catálogo.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <span class="step-num">02</span>
+        <div class="step-content">
+          <h3>Design & Desenvolvimento</h3>
+          <p>Layout exclusivo e foco na experiência de compra.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <span class="step-num">03</span>
+        <div class="step-content">
+          <h3>Integração de Pagamentos</h3>
+          <p>Gateways, fretes e sistemas essenciais.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <span class="step-num">04</span>
+        <div class="step-content">
+          <h3>Treinamento & Lançamento</h3>
+          <p>Treinamento e acompanhamento inicial.</p>
+        </div>
+      </div>
+    </div>
+    <div class="process-cta reveal">
+      <a href="#contato" class="btn btn-primary">Quero Minha Loja Virtual <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- CONTACT -->
+<section id="contato" class="section contact-section">
+  <div class="container">
+    <div class="contact-wrapper">
+      <div class="reveal">
+        <div class="eyebrow">Fale Conosco</div>
+        <h2>Pronto para Ter<br>Sua <span>Loja Virtual?</span></h2>
+        <p>Consultoria gratuita para seu e-commerce. Vamos analisar suas necessidades e criar a solução ideal para o seu negócio.</p>
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <strong>Horário de Atendimento</strong>
+              <span>Segunda a Sexta, 9h às 18h</span>
+            </div>
           </div>
-          <div class="hero-stats">
-            <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Responsivo</span></div>
-            <div class="stat-divider"></div>
-            <div class="stat"><span class="stat-num">24h</span><span class="stat-label">Retorno</span></div>
-            <div class="stat-divider"></div>
-            <div class="stat"><span class="stat-num">+10</span><span class="stat-label">Marketplaces</span></div>
+          <div class="contact-info-item">
+            <i class="fas fa-reply"></i>
+            <div>
+              <strong>Retorno Garantido</strong>
+              <span>Respondemos em até 24h úteis</span>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <strong>E-mail</strong>
+              <a href="mailto:atendimento@pbweb.com.br">atendimento@pbweb.com.br</a>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="https://api.whatsapp.com/send?phone=5511952098723">+55 11 95209-8723</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="hero-scroll-hint"><span>Role para baixo</span><i class="fas fa-chevron-down"></i></div>
-    </section>
-
-    <section id="servicos" class="section">
-      <div class="container">
-        <div class="section-header"><div class="section-tag">O Que Fazemos</div><h2>Soluções Completas<br>para seu E-commerce</h2><p>Serviços especializados do desenvolvimento à otimização.</p></div>
-        <div class="cards-grid">
-          <article class="card"><div class="card-media"><img src="./img/site.webp" alt="Loja Virtual" loading="lazy"></div><div class="card-body"><div class="card-icon"><i class="fas fa-store"></i></div><h3>Lojas Virtuais Completas</h3><p>E-commerces profissionais com catálogo, carrinho e integração com PagSeguro, Mercado Pago.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá!+Loja+virtual" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Orçamento Loja Virtual</a></div></article>
-          <article class="card"><div class="card-media"><img src="./img/checkout.webp" alt="Checkout" loading="lazy"></div><div class="card-body"><div class="card-icon"><i class="fas fa-credit-card"></i></div><h3>Checkout Otimizado</h3><p>Reduza abandono de carrinho com fluxo seguro e múltiplas formas de pagamento.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=Checkout" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Otimizar Checkout</a></div></article>
-          <article class="card"><div class="card-media"><img src="./img/seo.webp" alt="SEO" loading="lazy"></div><div class="card-body"><div class="card-icon"><i class="fas fa-search"></i></div><h3>SEO para E-commerce</h3><p>Tráfego orgânico e posicionamento no Google para seus produtos.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=SEO" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> SEO para Loja Virtual</a></div></article>
-          <article class="card"><div class="card-media"><img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80" alt="Documentação"></div><div class="card-body"><div class="card-icon"><i class="fas fa-certificate"></i></div><h3>Documentação e Certificado A1</h3><p>Certificado Digital A1, abertura de CNPJ e documentação jurídica.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=Certificado" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Regularizar Empresa</a></div></article>
-          <article class="card"><div class="card-media"><img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=800&q=80" alt="Multicanal"></div><div class="card-body"><div class="card-icon"><i class="fas fa-layer-group"></i></div><h3>Gestão Multicanal Completa</h3><p>Shopee, Shein, TikTok Shop, Mercado Livre com estoque integrado.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=Multicanal" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Gestão de Marketplaces</a></div></article>
-          <article class="card"><div class="card-media card-media-logo"><img src="https://i.pinimg.com/736x/4b/15/4d/4b154d1ddbd15deb479fc5e9bfc5dbf9.jpg" alt="Shein Partner"></div><div class="card-body"><div class="card-icon"><i class="fas fa-medal"></i></div><h3>Cadastro Oficial Shein</h3><p>Parceiro oficial Shein, cadastro completo e suporte.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=Shein" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Cadastro Shein Partner</a></div></article>
-          <article class="card"><div class="card-media"><img src="https://interacaomarcasepatentes.com.br/wp-content/uploads/2021/10/2021-10-11-r-de-marca-registrada-1.jpg" alt="INPI"></div><div class="card-body"><div class="card-icon"><i class="fas fa-registered"></i></div><h3>Registro de Marca no INPI</h3><p>Proteção da sua marca com consultoria e acompanhamento.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=INPI" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Registrar Minha Marca</a></div></article>
-          <article class="card"><div class="card-media"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" alt="Gestão"></div><div class="card-body"><div class="card-icon"><i class="fas fa-cogs"></i></div><h3>Gestão Completa de E-commerce</h3><p>Administração diária, produtos, estoque e pedidos.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=Gestão" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Contratar Gestão</a></div></article>
-          <article class="card"><div class="card-media card-media-logo"><img src="https://i.pinimg.com/736x/32/92/40/329240fd9fdaa1c07004b0a1788a42f9.jpg" alt="Shopee"></div><div class="card-body"><div class="card-icon"><i class="fas fa-tag"></i></div><h3>Gestão de Loja Shopee</h3><p>Otimização de anúncios e campanhas para featured deals.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=Shopee" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Gestão Shopee</a></div></article>
-          <article class="card"><div class="card-media card-media-logo"><img src="https://logospng.org/download/mercado-livre/logo-mercado-livre-4096.png" alt="Mercado Livre"></div><div class="card-body"><div class="card-icon"><i class="fas fa-star"></i></div><h3>Gestão Mercado Livre</h3><p>Otimização de listings e anúncios premium.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=MercadoLivre" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Gestão Mercado Livre</a></div></article>
-          <article class="card"><div class="card-media card-media-logo card-media-dark"><img src="https://logospng.org/download/tiktok/logo-tiktok-icone-4096.png" alt="TikTok Shop"></div><div class="card-body"><div class="card-icon"><i class="fab fa-tiktok"></i></div><h3>Gestão de TikTok Shop</h3><p>Vendas via vídeos, lives e TikTok Ads.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=TikTok" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Gestão TikTok Shop</a></div></article>
-          <article class="card"><div class="card-media"><img src="https://blog.unyleya.edu.br/wp-content/uploads/2017/06/9-tendencias-de-contabilidade-que-voce-precisa-dominar.jpeg" alt="Contabilidade"></div><div class="card-body"><div class="card-icon"><i class="fas fa-calculator"></i></div><h3>Contabilidade Completa</h3><p>Apuração de impostos e gestão fiscal.</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=Contabilidade" class="card-btn" target="_blank"><i class="fab fa-whatsapp"></i> Contratar Contabilidade</a></div></article>
+      <div class="reveal">
+        <div class="contact-channels">
+          <p class="channels-label">Escolha o canal de sua preferência:</p>
+          <a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá! Gostaria de solicitar um orçamento para criação de loja virtual completa. Podem me ajudar?" class="channel-btn channel-whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span><strong>WhatsApp</strong><small>Atendimento rápido e personalizado</small></span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="mailto:atendimento@pbweb.com.br" class="channel-btn channel-email">
+            <i class="fas fa-envelope"></i>
+            <span><strong>E-mail</strong><small>atendimento@pbweb.com.br</small></span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="https://www.instagram.com/p.bweb/" class="channel-btn channel-instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+            <span><strong>Instagram</strong><small>@p.bweb — Conheça nosso trabalho</small></span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+</main>
 
-    <section id="vantagens" class="section">
-      <div class="container"><div class="section-header"><div class="section-tag">Por Que Escolher a P.B Web</div><h2>Desenvolvemos E-commerces<br>que Realmente Vendem</h2><p>Foco em experiência do usuário e conversão.</p></div>
-        <div class="benefits-grid"><div class="benefit-card"><div class="benefit-icon"><i class="fas fa-shopping-cart"></i></div><h3>E-commerce Completo</h3><p>Catálogo, carrinho, checkout e relatórios.</p></div><div class="benefit-card"><div class="benefit-icon"><i class="fas fa-mobile-alt"></i></div><h3>Otimizado para Mobile</h3><p>Design responsivo para todas as telas.</p></div><div class="benefit-card"><div class="benefit-icon"><i class="fas fa-lock"></i></div><h3>Pagamentos Seguros</h3><p>Gateways confiáveis e transações protegidas.</p></div><div class="benefit-card"><div class="benefit-icon"><i class="fas fa-truck"></i></div><h3>Gestão de Entregas</h3><p>Frete automático com Correios e transportadoras.</p></div></div>
-        <div class="highlights-strip"><div class="highlight-item"><i class="fas fa-chart-line"></i><div><h4>Alta Conversão</h4><p>UX otimizada para vendas</p></div></div><div class="highlight-item"><i class="fas fa-headset"></i><div><h4>Suporte Dedicado</h4><p>Atendimento ágil</p></div></div><div class="highlight-item"><i class="fas fa-shield-alt"></i><div><h4>Segurança Total</h4><p>SSL e backups</p></div></div><div class="highlight-item"><i class="fas fa-rocket"></i><div><h4>Alta Performance</h4><p>Sites rápidos e SEO</p></div></div></div>
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="logo">
+          <div class="logo-icon">
+            <img src="img/logo.png" alt="P&B Web">
+          </div>
+        </a>
+        <p>Especialistas em Criação de Lojas Virtuais e E-commerce Profissional.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/p.bweb/" class="social" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/pbwebsolucoes" class="social" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://github.com/paulo-ricardo-ffg" class="social" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
       </div>
-    </section>
-
-    <section id="processo" class="section">
-      <div class="container"><div class="section-header"><div class="section-tag">Como Funciona</div><h2>Do Zero ao Lançamento<br>em 4 Etapas</h2><p>Processo transparente e estruturado.</p></div>
-        <div class="process-grid"><div class="process-step"><div class="step-num">01</div><div class="step-content"><h3>Planejamento</h3><p>Análise do nicho, concorrência e estrutura do catálogo.</p></div></div><div class="process-step"><div class="step-num">02</div><div class="step-content"><h3>Design & Desenvolvimento</h3><p>Layout exclusivo e foco na experiência de compra.</p></div></div><div class="process-step"><div class="step-num">03</div><div class="step-content"><h3>Integração de Pagamentos</h3><p>Gateways, fretes e sistemas essenciais.</p></div></div><div class="process-step"><div class="step-num">04</div><div class="step-content"><h3>Treinamento & Lançamento</h3><p>Treinamento e acompanhamento inicial.</p></div></div></div>
-        <div class="process-cta"><a href="#contato" class="btn btn-primary">Quero Minha Loja Virtual <i class="fas fa-arrow-right"></i></a></div>
+      <div class="footer-col">
+        <h5>Serviços</h5>
+        <a href="#servicos">Lojas Virtuais</a>
+        <a href="#servicos">Checkout Otimizado</a>
+        <a href="#servicos">SEO E-commerce</a>
+        <a href="#servicos">Marketplaces</a>
       </div>
-    </section>
+      <div class="footer-col">
+        <h5>Institucional</h5>
+        <a href="#vantagens">Vantagens</a>
+        <a href="#processo">Como Funciona</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contato</h5>
+        <a href="mailto:atendimento@pbweb.com.br">atendimento@pbweb.com.br</a>
+        <a href="https://api.whatsapp.com/send?phone=5511952098723">+55 11 95209-8723</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© <span id="current-year">2025</span> P.B Web Sites e Soluções · Todos os direitos reservados · <a href="mailto:atendimento@pbweb.com.br">atendimento@pbweb.com.br</a></div>
+      <div class="footer-sig">quantum · commerce // tomorrow's shop</div>
+    </div>
+  </div>
+</footer>
 
-    <section id="contato" class="section">
-      <div class="container"><div class="contact-wrapper"><div class="contact-left"><div class="section-tag">Fale Conosco</div><h2>Pronto para Ter<br>Sua Loja Virtual?</h2><p>Consultoria gratuita para seu e-commerce. Vamos analisar suas necessidades.</p><div class="contact-info-list"><div class="contact-info-item"><i class="fas fa-clock"></i><div><strong>Horário de Atendimento</strong><span>Segunda a Sexta, 9h às 18h</span></div></div><div class="contact-info-item"><i class="fas fa-reply"></i><div><strong>Retorno Garantido</strong><span>Respondemos em até 24h</span></div></div><div class="contact-info-item"><i class="fas fa-envelope"></i><div><strong>E-mail</strong><a href="mailto:atendimento@pbweb.com.br">atendimento@pbweb.com.br</a></div></div><div class="contact-info-item"><i class="fab fa-whatsapp"></i><div><strong>WhatsApp</strong><a href="https://api.whatsapp.com/send?phone=5511952098723">+55 11 95209-8723</a></div></div></div></div><div class="contact-right"><div class="contact-channels"><p class="channels-label">Fale pelo canal preferido:</p><a href="https://api.whatsapp.com/send?phone=5511952098723&text=Orçamento" class="channel-btn channel-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i><span><strong>WhatsApp</strong><small>Resposta rápida</small></span><i class="fas fa-arrow-right"></i></a><a href="mailto:atendimento@pbweb.com.br" class="channel-btn channel-email"><i class="fas fa-envelope"></i><span><strong>E-mail</strong><small>atendimento@pbweb.com.br</small></span><i class="fas fa-arrow-right"></i></a><a href="https://www.instagram.com/p.bweb/" class="channel-btn channel-instagram" target="_blank"><i class="fab fa-instagram"></i><span><strong>Instagram</strong><small>@p.bweb</small></span><i class="fas fa-arrow-right"></i></a></div></div></div><div class="qrcode-print"><img src="img/qrcode.png" alt="QR Code" width="120"><p>Escaneie para falar sobre sua loja virtual</p></div></div>
-    </section>
-  </main>
+<a href="https://api.whatsapp.com/send?phone=5511952098723&text=Olá! Gostaria de solicitar um orçamento para criação de loja virtual completa. Podem me ajudar?" class="wa-float" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
 
-  <footer><div class="container"><div class="footer-inner"><div class="footer-brand"><img src="img/logo.png" alt="P&B Web" height="36"><p>Especialistas em Criação de Lojas Virtuais e E-commerce Profissional.</p></div><div class="footer-links"><a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#vantagens">Vantagens</a><a href="#processo">Como Funciona</a><a href="#contato">Contato</a></div><div class="footer-social"><a href="https://www.instagram.com/p.bweb/" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://www.facebook.com/pbwebsolucoes" target="_blank"><i class="fab fa-facebook-f"></i></a><a href="https://github.com/paulo-ricardo-ffg" target="_blank"><i class="fab fa-github"></i></a></div></div><div class="footer-bottom"><p>© <span id="current-year">2025</span> P.B Web Sites e Soluções. Todos os direitos reservados.</p><p><a href="mailto:atendimento@pbweb.com.br">atendimento@pbweb.com.br</a> · <a href="https://api.whatsapp.com/send?phone=5511952098723">+55 11 95209-8723</a></p></div></div></footer>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://pbweb.com.br/#website","url":"https://pbweb.com.br/","name":"P&B Web Sites e Soluções","description":"Especialistas em criação de lojas virtuais","inLanguage":"pt-BR"},{"@type":"Organization","@id":"https://pbweb.com.br/#organization","name":"P&B Web","url":"https://pbweb.com.br/","logo":"https://pbweb.com.br/img/logo.png","sameAs":["https://github.com/paulo-ricardo-ffg","https://www.facebook.com/pbwebsolucoes","https://www.instagram.com/p.bweb/"],"contactPoint":[{"@type":"ContactPoint","telephone":"+5511952098723","contactType":"customer service","areaServed":"BR"}]}]}</script>
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://pbweb.com.br/#website","url":"https://pbweb.com.br/","name":"P&B Web Sites e Soluções","description":"Especialistas em criação de lojas virtuais","inLanguage":"pt-BR"},{"@type":"Organization","@id":"https://pbweb.com.br/#organization","name":"P&B Web","url":"https://pbweb.com.br/","logo":"https://pbweb.com.br/img/logo.png","sameAs":["https://github.com/paulo-ricardo-ffg","https://www.facebook.com/pbwebsolucoes","https://www.instagram.com/p.bweb/"],"contactPoint":[{"@type":"ContactPoint","telephone":"+5511952098723","contactType":"customer service","areaServed":"BR"}]}]}</script>
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener('click',function(e){let id=this.getAttribute('href');if(id!=="#"){e.preventDefault();let target=document.querySelector(id);if(target) target.scrollIntoView({behavior:'smooth'})}})});
-    const navbar=document.getElementById('navbar');let lastScroll=0;
-    window.addEventListener('scroll',()=>{let current=window.scrollY;navbar.classList.toggle('scrolled',current>60);navbar.style.transform=(current>lastScroll&&current>120)?'translateY(-100%)':'translateY(0)';lastScroll=current;});
-    const toggle=document.getElementById('menuToggle'),nav=document.getElementById('mainNav');
-    toggle.addEventListener('click',()=>{let isActive=toggle.classList.toggle('active');nav.classList.toggle('active',isActive);toggle.setAttribute('aria-expanded',isActive);});
-    nav.querySelectorAll('a').forEach(link=>{link.addEventListener('click',()=>{toggle.classList.remove('active');nav.classList.remove('active');});});
-    const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);}});},{threshold:0.1});
-    document.querySelectorAll('[data-aos]').forEach(el=>observer.observe(el));
-    document.getElementById('current-year').textContent=new Date().getFullYear();
-  </script>
+<script>
+// ── SCROLL PROGRESS ─────────────────────────────────
+const prog = document.getElementById('scrollProgress');
+window.addEventListener('scroll', () => {
+  const docH = document.documentElement.scrollHeight - window.innerHeight;
+  prog.style.transform = 'scaleX(' + (window.scrollY / docH) + ')';
+});
+
+// ── HEADER HIDE ON SCROLL ──────────────────────────
+let lastScroll = 0;
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  const current = window.scrollY;
+  if (current > lastScroll && current > 100) header.classList.add('hidden');
+  else header.classList.remove('hidden');
+  if (current > 40) header.classList.add('scrolled');
+  else header.classList.remove('scrolled');
+  lastScroll = current;
+});
+
+// ── SIDEBAR MENU ────────────────────────────────────
+const hamburger = document.getElementById('hamburger');
+const sidebar = document.getElementById('sidebar');
+const overlay = document.getElementById('sidebarOverlay');
+const sidebarClose = document.getElementById('sidebarClose');
+
+function openSidebar() {
+  sidebar.classList.add('open');
+  overlay.classList.add('open');
+  hamburger.classList.add('open');
+  hamburger.setAttribute('aria-expanded', 'true');
+  document.body.style.overflow = 'hidden';
+}
+function closeSidebar() {
+  sidebar.classList.remove('open');
+  overlay.classList.remove('open');
+  hamburger.classList.remove('open');
+  hamburger.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+}
+
+hamburger.addEventListener('click', () => {
+  sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+});
+sidebarClose.addEventListener('click', closeSidebar);
+overlay.addEventListener('click', closeSidebar);
+sidebar.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', closeSidebar);
+});
+
+// ── SCROLL REVEAL ──────────────────────────────────
+const reveals = document.querySelectorAll('.reveal');
+const staggerWraps = document.querySelectorAll('.reveal-stagger');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('up'), 80);
+    }
+  });
+}, { threshold: 0.1 });
+
+reveals.forEach(el => observer.observe(el));
+
+const staggerObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll(':scope > *').forEach(child => {
+        setTimeout(() => child.classList.add('up'), 80);
+      });
+    }
+  });
+}, { threshold: 0.08 });
+
+staggerWraps.forEach(el => staggerObserver.observe(el));
+
+// ── SMOOTH ANCHORS ─────────────────────────────────
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+});
+
+// ── YEAR ───────────────────────────────────────────
+document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
